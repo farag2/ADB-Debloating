@@ -1,5 +1,9 @@
 :: Браузер
 %~dp0adb shell pm uninstall --user 0 com.android.browser
+:: Facebook
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services
 :: Быстрые приложения
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 :: Google Диск
