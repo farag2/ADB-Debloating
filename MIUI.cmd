@@ -64,4 +64,5 @@
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
 ::GetApps
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.mipicks
+%~dp0adb kill-server
 pause
