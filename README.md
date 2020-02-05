@@ -48,4 +48,5 @@
 - GetApps
 
 ## Ссылки
+- [Драйверы](https://developer.android.com/studio/run/win-usb)
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
