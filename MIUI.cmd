@@ -1,7 +1,6 @@
 @echo off
 
 set input=
-call :title
 echo.
 echo Remove MIUI apps?
 echo.
