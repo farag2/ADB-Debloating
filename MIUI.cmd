@@ -1,68 +1,99 @@
-:: Браузер
+@echo off
+
+set input=
+call :title
+echo.
+echo Remove MIUI apps?
+echo.
+set /p input="Enter amen for Yes> "
+if /i "%input%"=="amen" goto :amen
+
+:amen
+echo Браузер
 %~dp0adb shell pm uninstall --user 0 com.android.browser
-:: Chrome
+echo Chrome
 %~dp0adb shell pm uninstall --user 0 com.android.chrome
-:: Диктофон
+echo Загрузки
+%~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
+echo Диктофон
 %~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
-:: Каталог живых обоев
+echo Меню SIM-карты
+%~dp0adb shell pm uninstall --user 0 com.android.stk
+echo Каталог живых обоев
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
-:: YouTube
+echo YouTube
 %~dp0adb shell pm uninstall --user 0 com.google.android.youtube
-:: Facebook
+echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.system
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
-:: Google Диск
+echo Google Диск
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
-:: Карты
+echo Карты
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.maps
-:: Google Фото
+echo Google Фото
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
-:: Device Health Services
+echo Duo
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.tachyon
+echo Device Health Services
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.turbo
-:: Цифровое благополучие
+echo Цифровое благополучие
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
-:: Gmail
+echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
-:: Google Play Музыка
+echo Google Play Музыка
 %~dp0adb shell pm uninstall --user 0 com.google.android.music
-:: Google Play Игры
+echo Google Play Игры
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
-:: Android Auto
+echo Android Auto
 %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
-:: Google Play Фильмы
+echo Google Play Фильмы
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
-:: Объектив
+echo Объектив
 %~dp0adb shell pm uninstall --user 0 com.google.ar.lens
-:: Google Play Services for AR
+echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
-:: Карусель обоев
+echo Bookmark Provider
+%~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
+echo Карусель обоев
 %~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
-:: Быстрые приложения
+echo Быстрые приложения
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
-:: Заметки
+echo Заметки
 %~dp0adb shell pm uninstall --user 0 com.miui.notes
-:: Лента виджетов
+echo Справочник
+%~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
+echo Проводник
+%~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
+echo Лента виджетов
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
-:: Analytics
+echo Analytics
 %~dp0adb shell pm uninstall --user 0 com.miui.analytics
-:: Компас
+echo Компас
 %~dp0adb shell pm uninstall --user 0 com.miui.compass
-:: FM-радио
+echo FM-радио
 %~dp0adb shell pm uninstall --user 0 com.miui.fm
-:: Служба FM радио
+echo Служба FM радио
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
-:: Сервисы и обратная связь
+echo Сервисы и обратная связь
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
-:: msa
+echo msa
 %~dp0adb shell pm uninstall --user 0 com.miui.msa.global
-:: Музыка
+echo Музыка
 %~dp0adb shell pm uninstall --user 0 com.miui.player
-:: Mi Видео
+echo Mi Видео
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
-:: Игры
+echo PartnerNetflixActivation
+%~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
+echo Joyose
+%~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
+echo Сканер
+%~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
+echo Игры
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
-::GetApps
+echo GetApps
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.mipicks
+
 %~dp0adb kill-server
+echo.
 pause
