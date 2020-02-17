@@ -6,13 +6,13 @@
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
 ## Приложения
-- Браузер (Замена: [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
+- Браузер (возможная замена: [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Chrome
-- Загрузки (Замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
+- Загрузки (возможная замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Диктофон
 - Меню SIM-карты
 - Каталог живых обоев
-- YouTube (Замена: [YouTube Vanced](https://vanced.app))
+- YouTube (возможная замена: [YouTube Vanced](https://vanced.app))
 - Facebook
 - Google Диск
 - Карты
@@ -32,7 +32,7 @@
 - Быстрые приложения
 - Заметки
 - Справочник
-- Проводник (Замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
+- Проводник (возможная замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Лента виджетов
 - Analytics
 - Компас
