@@ -1,12 +1,14 @@
 @echo off
-chcp 65001 >nul
 
+:top
 set input=
+cls
 echo.
 echo Remove MIUI apps?
 echo.
-set /p input = "Enter amen for Yes> "
-if /i "%input%" == "amen" goto :amen
+set /p input="Enter amen for Yes> "
+if /i "%input%"=="amen" goto :amen
+goto :top
 
 :amen
 echo Браузер
