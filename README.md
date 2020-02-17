@@ -1,17 +1,18 @@
-## Обзор
-Удалить некоторые приложения из MIUI 11, используя ADB
+## Примечание
+Закоментируйте в скрипте ненужные приложения, что их оставить
 
-## Использование
-Скачанный MIUI.cmd поместить в ту же папку, где и компоненты ADB
+## Ссылки
+- [Драйверы](https://developer.android.com/studio/run/win-usb)
+- [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
 ## Приложения
-- Браузер ([Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
+- Браузер (Замена: [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Chrome
-- Загрузки ([X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
+- Загрузки (Замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Диктофон
 - Меню SIM-карты
 - Каталог живых обоев
-- YouTube ([YouTube Vanced](https://vanced.app))
+- YouTube (Замена: [YouTube Vanced](https://vanced.app))
 - Facebook
 - Google Диск
 - Карты
@@ -31,7 +32,7 @@
 - Быстрые приложения
 - Заметки
 - Справочник
-- Проводник ([X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
+- Проводник (Замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Лента виджетов
 - Analytics
 - Компас
@@ -46,7 +47,3 @@
 - Сканер
 - Игры
 - GetApps
-
-## Ссылки
-- [Драйверы](https://developer.android.com/studio/run/win-usb)
-- [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
