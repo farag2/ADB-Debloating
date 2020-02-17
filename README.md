@@ -5,13 +5,13 @@
 Скачанный MIUI.cmd поместить в ту же папку, где и компоненты ADB
 
 ## Приложения
-- Браузер
+- Браузер ([Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Chrome
-- Загрузки
+- Загрузки ([X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Диктофон
 - Меню SIM-карты
 - Каталог живых обоев
-- YouTube
+- YouTube ([YouTube Vanced](https://vanced.app))
 - Facebook
 - Google Диск
 - Карты
@@ -31,7 +31,7 @@
 - Быстрые приложения
 - Заметки
 - Справочник
-- Проводник
+- Проводник ([X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Лента виджетов
 - Analytics
 - Компас
