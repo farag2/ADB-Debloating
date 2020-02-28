@@ -26,6 +26,8 @@ echo Каталог живых обоев
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
 echo YouTube
 %~dp0adb shell pm uninstall --user 0 com.google.android.youtube
+echo Android Accessibility Suite
+%~dp0adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.system
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
