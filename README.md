@@ -1,11 +1,14 @@
-## Примечание
+# Примечание
+
 Закомментируйте ненужные приложения, чтобы их оставить
 
 ## Ссылки
+
 - [Драйверы](https://developer.android.com/studio/run/win-usb)
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
-## Приложения
+### Приложения
+
 - Браузер (возможная замена: [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Chrome
 - Загрузки (возможная замена: [X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
