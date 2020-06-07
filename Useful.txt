@@ -1,10 +1,9 @@
-# Отключить рекламу во ВКонтакте
-*#*#856682583#*#*
-
 # Разблокировка загрузчика
 https://4pda.ru/forum/index.php?showtopic=721838&st=14380#entry63359408
+
 # Прошивка
-https://4pda.ru/forum/index.php?showtopic=943335&st=0#entry83164796
+https://4pda.ru/forum/index.php?showtopic=987474&st=20#entry97099496
+
 # Переход на другой регион
 https://4pda.ru/forum/index.php?showtopic=943335&st=1680#entry85119743
 https://github.com/francescotescari/XMT/releases
@@ -16,6 +15,3 @@ https://github.com/francescotescari/XMT/releases
 УСТЗАПРЕТ1
 УСТЗАПРЕТВП
 УСТЗАПРЕТСП
-
-# Fenix
-https://firefox-ci-tc.services.mozilla.com/tasks/index/project.mobile.fenix.v2
