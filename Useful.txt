@@ -15,3 +15,5 @@ https://github.com/francescotescari/XMT/releases
 УСТЗАПРЕТ1
 УСТЗАПРЕТВП
 УСТЗАПРЕТСП
+
+https://play.google.com/store/apps/details?id=me.iofel.packagelist
