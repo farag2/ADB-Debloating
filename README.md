@@ -1,17 +1,8 @@
-# Note
-
-Comment out unnecessary apps packages to leave them
-
 # Get apps packages list
 
 ```cmd
 adb shell pm list packages -f > %SystemDrive%\packages.txt
 ```
-
-# Links
-
-- [Drivers](https://developer.android.com/studio/run/win-usb)
-- [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
 # Apps to remove
 
@@ -131,6 +122,15 @@ adb shell pm list packages -f > %SystemDrive%\packages.txt
 - Яндекс
 
 </details>
+
+# Note
+
+Comment out unnecessary apps packages to leave them
+
+# Links
+
+- [Drivers](https://developer.android.com/studio/run/win-usb)
+- [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
 ## Ask a question on
 
