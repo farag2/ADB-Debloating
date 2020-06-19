@@ -1,4 +1,3 @@
-:: %~dp0adb shell pm list packages -f > C:\1.txt
 @echo off
 chcp 65001 >nul
 
@@ -6,7 +5,7 @@ chcp 65001 >nul
 set input=
 cls
 echo.
-echo Remove MIUI apps?
+echo Remove OneUI apps?
 echo.
 set /p input="Enter amen for Yes> "
 if /i "%input%"=="amen" goto :amen
