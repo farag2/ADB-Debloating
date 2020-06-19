@@ -57,7 +57,7 @@
 </details>
 
 <details>
-  <summary>MIUI</summary>
+  <summary>OneUI</summary>
 
 - Ar Zone
 - Ar-зарисовка
