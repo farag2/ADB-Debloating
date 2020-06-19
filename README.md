@@ -1,13 +1,19 @@
-# Примечание
+# Note
 
-Закомментируйте ненужные приложения, чтобы их оставить
+Comment out unnecessary apps packages to leave them
 
-# Ссылки
+# Get apps packages list
 
-- [Драйверы](https://developer.android.com/studio/run/win-usb)
+```cmd
+adb shell pm list packages -f > %SystemDrive%\1.txt
+```
+
+# Links
+
+- [Drivers](https://developer.android.com/studio/run/win-usb)
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 
-# Приложения
+# Apps to remove
 
 <details>
   <summary>MIUI</summary>
