@@ -5,7 +5,7 @@ Comment out unnecessary apps packages to leave them
 # Get apps packages list
 
 ```cmd
-adb shell pm list packages -f > %SystemDrive%\1.txt
+adb shell pm list packages -f > %SystemDrive%\packages.txt
 ```
 
 # Links
