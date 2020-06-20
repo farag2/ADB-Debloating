@@ -57,6 +57,8 @@ echo Game Optimizing Service
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.game.gos
 echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
+echo Gmail
+%~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
 echo Google Play Фильмы
@@ -95,6 +97,8 @@ echo Samsung Pass Provider
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.samsungpass
 echo Samsung Pay
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.spay
+echo Secure Folder
+%~dp0adb shell pm uninstall --user 0 com.samsung.knox.securefolder
 echo SmartThings
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.beaconmanager
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.oneconnect
