@@ -45,6 +45,8 @@ echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.system
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
+echo Galaxy Themes
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.themestore
 echo Galaxy Wearable
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.app.watchmanager
 echo Game Booster
@@ -98,6 +100,8 @@ echo SmartThings
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.oneconnect
 echo SwiftKey factory settings
 %~dp0adb shell pm uninstall --user 0 com.touchtype.swiftkey
+echo Wearable Manager Installer
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.app.watchmanagerstub
 echo YouTube
 %~dp0adb shell pm uninstall --user 0 com.google.android.youtube
 echo YouTube Music
@@ -124,6 +128,8 @@ echo Клавиатура Samsung
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.honeyboard
 echo Люди
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.service.peoplestripe
+echo Мои файлы
+%~dp0adb shell pm uninstall --user 0 com.sec.android.app.myfiles
 echo Погода
 %~dp0adb shell pm uninstall --user 0 com.sec.android.daemonapp
 echo Прямая расшифровка
