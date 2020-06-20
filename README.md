@@ -79,6 +79,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - Game Launcher
 - Game Optimizing Service
 - Gmail
+- Google
 - Google Play Services for AR
 - Google Play Фильмы
 - Google Фото
@@ -98,6 +99,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - Samsung Pass
 - Samsung Pass Provider
 - Samsung Pay
+- Secure Folder
 - SmartThings
 - SwiftKey factory settings
 - Wearable Manager Installer
