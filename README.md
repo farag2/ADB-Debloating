@@ -3,7 +3,7 @@
 # Get apps packages list
 
 ```cmd
-adb shell pm list packages -f > %SystemDrive%\packages.txt
+adb shell pm list packages -f > %CD%\packages.txt
 ```
 
 # Apps to remove
@@ -73,6 +73,7 @@ adb shell pm list packages -f > %SystemDrive%\packages.txt
 - Device Health Services
 - Duo
 - Facebook
+- Galaxy Themes
 - Galaxy Wearable
 - Game Booster
 - Game Launcher
@@ -99,6 +100,7 @@ adb shell pm list packages -f > %SystemDrive%\packages.txt
 - Samsung Pay
 - SmartThings
 - SwiftKey factory settings
+- Wearable Manager Installer
 - YouTube
 - YouTube Music
 - Автозаполнение с Samsung Pass
@@ -112,6 +114,7 @@ adb shell pm list packages -f > %SystemDrive%\packages.txt
 - Клавиатура Microsoft SwiftKey
 - Клавиатура Samsung
 - Люди
+- Мои файлы
 - Погода
 - Прямая расшифровка
 - Редактор AR-эмодзи
