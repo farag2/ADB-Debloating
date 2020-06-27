@@ -138,9 +138,10 @@ Comment out unnecessary apps packages to leave them
 
 - [Drivers](https://developer.android.com/studio/run/win-usb)
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
+- [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
 
 ## Ask a question on
 
 - [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=523489&view=findpost&p=95909388)
 - [OneUI](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
-- [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
+
