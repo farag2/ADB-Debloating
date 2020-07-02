@@ -101,5 +101,6 @@ echo GetApps
 
 %~dp0adb kill-server
 echo.
-RMDIR /S /Q %HOMEPATH%\.android
+RMDIR /S /Q %USERPROFILE%\.android
+RMDIR /S /Q %USERPROFILE%\.dbus-keyrings
 pause
