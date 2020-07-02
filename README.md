@@ -142,6 +142,6 @@ Comment out unnecessary apps packages to leave them
 
 ## Ask a question on
 
-- [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=523489&view=findpost&p=95909388)
+- [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
 - [OneUI](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
 
