@@ -57,7 +57,7 @@ echo Game Optimizing Service
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.game.gos
 echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
-echo Gmail
+echo Google
 %~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
