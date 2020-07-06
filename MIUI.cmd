@@ -12,6 +12,8 @@ if /i "%input%"=="amen" goto :amen
 goto :top
 
 :amen
+echo Bookmark Provider
+%~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 echo Браузер
 %~dp0adb shell pm uninstall --user 0 com.android.browser
 echo Chrome
@@ -46,6 +48,8 @@ echo Цифровое благополучие
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
+echo Google
+%~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 echo Google Play Музыка
 %~dp0adb shell pm uninstall --user 0 com.google.android.music
 echo Google Play Игры
@@ -58,8 +62,6 @@ echo Объектив
 %~dp0adb shell pm uninstall --user 0 com.google.ar.lens
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
-echo Bookmark Provider
-%~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 echo Карусель обоев
 %~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
 echo Быстрые приложения
