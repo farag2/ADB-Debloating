@@ -18,6 +18,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - Меню SIM-карты
 - Каталог живых обоев
 - YouTube ([YouTube Vanced](https://vanced.app))
+- Android Accessibility Suite
 - Facebook
 - Google Диск
 - Карты
@@ -93,7 +94,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - Samsung Galaxy Friends
 - Samsung Global Goals
 - Samsung Health
-- Samsung Internet
+- Samsung Internet ([Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Samsung Kids
 - Samsung Notes
 - Samsung Pass
@@ -103,7 +104,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - SmartThings
 - SwiftKey factory settings
 - Wearable Manager Installer
-- YouTube
+- YouTube ([YouTube Vanced](https://vanced.app))
 - YouTube Music
 - Автозаполнение с Samsung Pass
 - Включение голосом
@@ -116,7 +117,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 - Клавиатура Microsoft SwiftKey
 - Клавиатура Samsung
 - Люди
-- Мои файлы
+- Мои файлы ([X-plore File Manager](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore))
 - Погода
 - Прямая расшифровка
 - Редактор AR-эмодзи
