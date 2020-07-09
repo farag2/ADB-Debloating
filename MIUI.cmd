@@ -12,6 +12,8 @@ if /i "%input%"=="amen" goto :amen
 goto :top
 
 :amen
+echo Юла
+%~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 echo Браузер
@@ -31,6 +33,7 @@ echo YouTube
 echo Android Accessibility Suite
 %~dp0adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 echo Facebook
+%~dp0adb shell pm uninstall --user 0 com.facebook.katana
 %~dp0adb shell pm uninstall --user 0 com.facebook.system
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
@@ -64,6 +67,8 @@ echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
 echo Карусель обоев
 %~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
+echo Mi Mover
+%~dp0adb shell pm uninstall --user 0 com.miui.huanji
 echo Быстрые приложения
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 echo Заметки
@@ -100,6 +105,8 @@ echo Игры
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
 echo GetApps
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.mipicks
+echo GetApps
+%~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 %~dp0adb kill-server
 echo.
