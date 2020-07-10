@@ -12,6 +12,8 @@ if /i "%input%"=="amen" goto :amen
 goto :top
 
 :amen
+echo Средство просмотра документов Mi (на платформе WPS)
+%~dp0adb shell pm uninstall --user 0 cn.wps.xiaomi.abroad.lite
 echo Юла
 %~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
 echo Bookmark Provider
@@ -26,6 +28,8 @@ echo Диктофон
 %~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
 echo Меню SIM-карты
 %~dp0adb shell pm uninstall --user 0 com.android.stk
+echo Темы
+%~dp0adb shell pm uninstall --user 0 com.android.thememanager
 echo Каталог живых обоев
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
 echo YouTube
@@ -89,6 +93,8 @@ echo Служба FM радио
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
 echo Сервисы и обратная связь
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
+echo Mi Share
+%~dp0adb shell pm uninstall --user 0 com.miui.mishare.connectivity
 echo msa
 %~dp0adb shell pm uninstall --user 0 com.miui.msa.global
 echo Музыка
