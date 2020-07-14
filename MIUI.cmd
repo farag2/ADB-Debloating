@@ -80,6 +80,7 @@ echo Заметки
 echo Справочник
 %~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
 echo Проводник
+:: Становится невозможно выбрать прошивку через 3 точки
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 echo Лента виджетов
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
@@ -95,6 +96,7 @@ echo Сервисы и обратная связь
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
 echo Mi Share
 %~dp0adb shell pm uninstall --user 0 com.miui.mishare.connectivity
+%~dp0adb shell pm uninstall --user 0 com.xiaomi.midrop
 echo msa
 %~dp0adb shell pm uninstall --user 0 com.miui.msa.global
 echo Музыка
