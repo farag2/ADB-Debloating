@@ -69,8 +69,17 @@ echo Объектив
 %~dp0adb shell pm uninstall --user 0 com.google.ar.lens
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
+echo Mi Браузер
+:: Невозможно удалить
+%~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
 echo Карусель обоев
-%~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
+:: Невозможно удалить
+%~dp0adb shell pm disable-user --user 0 com.miui.android.fashiongallery
+echo Проводник
+:: Становится невозможно выбрать прошивку через 3 точки
+%~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
+echo Лента виджетов
+%~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 echo Mi Mover
 %~dp0adb shell pm uninstall --user 0 com.miui.huanji
 echo Быстрые приложения
@@ -79,11 +88,6 @@ echo Заметки
 %~dp0adb shell pm uninstall --user 0 com.miui.notes
 echo Справочник
 %~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
-echo Проводник
-:: Становится невозможно выбрать прошивку через 3 точки
-%~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
-echo Лента виджетов
-%~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 echo Analytics
 %~dp0adb shell pm uninstall --user 0 com.miui.analytics
 echo Компас
