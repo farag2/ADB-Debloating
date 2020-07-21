@@ -9,7 +9,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 # Apps to remove
 
 <details>
-  <summary>MIUI</summary>
+  <summary>MIUI 12</summary>
 
 - Браузер ([Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
 - Chrome
@@ -57,7 +57,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 </details>
 
 <details>
-  <summary>OneUI</summary>
+  <summary>OneUI 2</summary>
 
 - Ar Zone
 - Ar-зарисовка
