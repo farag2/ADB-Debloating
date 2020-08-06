@@ -57,7 +57,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 </details>
 
 <details>
-  <summary>OneUI 2</summary>
+  <summary>One UI 2</summary>
 
 - Ar Zone
 - Ar-зарисовка
@@ -144,5 +144,5 @@ Comment out unnecessary apps packages to leave them
 ## Ask a question on
 
 - [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
-- [OneUI](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
+- [One UI](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
 
