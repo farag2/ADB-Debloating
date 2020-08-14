@@ -140,7 +140,7 @@ Comment out unnecessary apps packages to leave them
 - [Drivers](https://developer.android.com/studio/run/win-usb)
 - [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html)
 - [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
-
+- [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
 ## Ask a question on
 
 - [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
