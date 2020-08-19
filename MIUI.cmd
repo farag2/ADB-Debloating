@@ -28,8 +28,9 @@ echo Диктофон
 %~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
 echo Меню SIM-карты
 %~dp0adb shell pm uninstall --user 0 com.android.stk
-echo Темы
-%~dp0adb shell pm uninstall --user 0 com.android.thememanager
+:: echo Темы
+:: Становится невозможно установить картинку на обои
+:: %~dp0adb shell pm uninstall --user 0 com.android.thememanager
 echo Каталог живых обоев
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
 echo YouTube
