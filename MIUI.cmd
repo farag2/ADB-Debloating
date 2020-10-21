@@ -2,24 +2,25 @@
 chcp 65001 >nul
 
 :top
-set input=
 cls
 echo.
-echo Remove MIUI apps?
+echo Uninstall MIUI apps?
 echo.
-set /p input="Enter amen for Yes> "
+set /p input="Enter "amen" for "yes"> "
 if /i "%input%"=="amen" goto :amen
 goto :top
 
 :amen
+echo WPS Office
+%~dp0adb shell pm uninstall --user 0 cn.wps.moffice_eng
 echo Средство просмотра документов Mi (на платформе WPS)
 %~dp0adb shell pm uninstall --user 0 cn.wps.xiaomi.abroad.lite
+echo Aliexpress
+%~dp0adb shell pm uninstall --user 0 com.alibaba.aliexpresshd
 echo Юла
 %~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
-echo Браузер
-%~dp0adb shell pm uninstall --user 0 com.android.browser
 echo Chrome
 %~dp0adb shell pm uninstall --user 0 com.android.chrome
 echo Загрузки
@@ -33,8 +34,16 @@ echo Меню SIM-карты
 :: %~dp0adb shell pm uninstall --user 0 com.android.thememanager
 echo Каталог живых обоев
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
+echo Booking.com
+%~dp0adb shell pm uninstall --user 0 com.booking
+echo Mi Пульт
+%~dp0adb shell pm uninstall --user 0 com.duokan.phone.remotecontroller
+echo eBay
+%~dp0adb shell pm uninstall --user 0 com.ebay.mobile
 echo YouTube
 %~dp0adb shell pm uninstall --user 0 com.google.android.youtube
+echo YouTube Music
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
 echo Android Accessibility Suite
 %~dp0adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 echo Facebook
@@ -44,10 +53,16 @@ echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
 echo Google Диск
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
+echo Ассистент
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.googleassistant
+echo Google Новости
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.magazines
 echo Карты
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.maps
 echo Google Фото
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
+echo Google Podcasts
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.podcasts
 echo Duo
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.tachyon
 echo Device Health Services
@@ -64,6 +79,8 @@ echo Google Play Игры
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 echo Android Auto
 %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
+echo Android One
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
 echo Google Play Фильмы
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 echo Объектив
@@ -81,6 +98,10 @@ echo Проводник
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 echo Лента виджетов
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
+echo Mi Community
+%~dp0adb shell pm uninstall --user 0 com.mi.global.bbs
+echo Mi Store
+%~dp0adb shell pm uninstall --user 0 com.mi.global.shop
 echo Mi Mover
 %~dp0adb shell pm uninstall --user 0 com.miui.huanji
 echo Быстрые приложения
@@ -99,7 +120,7 @@ echo Служба FM радио
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
 echo Сервисы и обратная связь
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
-echo Mi Share
+echo ShareMe
 %~dp0adb shell pm uninstall --user 0 com.miui.mishare.connectivity
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.midrop
 echo msa
@@ -110,15 +131,21 @@ echo Mi Видео
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
 echo PartnerNetflixActivation
 %~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
+echo Opera
+%~dp0adb shell pm uninstall --user 0 com.opera.browser
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
 echo Сканер
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
 echo Игры
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
-echo GetApps
+echo Mi Picks
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.mipicks
-echo GetApps
+echo Дзен
+%~dp0adb shell pm uninstall --user 0 com.yandex.zen
+echo TikToks
+%~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
+echo Яндекс
 %~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 %~dp0adb kill-server
