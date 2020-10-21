@@ -79,7 +79,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 </details>
 
 <details>
-  <summary>One UI 2</summary>
+  <summary>One UI 2.5</summary>
 
 * Ar Zone
 * Ar*зарисовка
