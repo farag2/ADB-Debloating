@@ -1,3 +1,8 @@
+
+
+
+
+
 @echo off
 chcp 65001 >nul
 
@@ -188,6 +193,7 @@ echo PartnerNetflixActivation
 
 echo Opera
 %~dp0adb shell pm uninstall --user 0 com.opera.browser
+%~dp0adb shell pm uninstall --user 0 com.opera.preinstall
 
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
