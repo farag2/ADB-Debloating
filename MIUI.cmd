@@ -1,8 +1,3 @@
-
-
-
-
-
 @echo off
 chcp 65001 >nul
 
@@ -194,6 +189,9 @@ echo PartnerNetflixActivation
 echo Opera
 %~dp0adb shell pm uninstall --user 0 com.opera.browser
 %~dp0adb shell pm uninstall --user 0 com.opera.preinstall
+
+echo Qualcomm Voice Assist
+%~dp0adb shell pm uninstall --user 0 com.quicinc.voice.activation
 
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
