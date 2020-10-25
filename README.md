@@ -170,7 +170,7 @@ Comment out/uncomment packages names
 ## Ask a question on
 
 * MIUI
-  * [Mi 10T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
+  * [Mi 10T](https://4pda.ru/forum/index.php?s=&showtopic=1005145&view=findpost&p=100967182)
   * [Mi 9T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
 * One UI
   * [Galaxy S20](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
