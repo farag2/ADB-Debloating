@@ -1,12 +1,14 @@
+# Debloat MIUI 12 & One UI 2.5
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
-# Get apps packages list
+## Get apps packages list
 
 ```cmd
 adb shell pm list packages -f > %CD%\packages.txt
 ```
 
-# Apps to remove
+## Apps to remove
 
 <details>
   <summary>MIUI 12</summary>
@@ -82,8 +84,8 @@ adb shell pm list packages -f > %CD%\packages.txt
   <summary>One UI 2.5</summary>
 
 * Ar Zone
-* Ar*зарисовка
-* Ar*приложения
+* Ar-зарисовка
+* Ar-приложения
 * Bixby
 * Bixby Vision
 * Bixby Voice
@@ -142,7 +144,7 @@ adb shell pm list packages -f > %CD%\packages.txt
 * Мои файлы
 * Погода
 * Прямая расшифровка
-* Редактор AR*эмодзи
+* Редактор AR-эмодзи
 * Руководство пользователя
 * Служба Bixby
 * Советы
@@ -153,18 +155,22 @@ adb shell pm list packages -f > %CD%\packages.txt
 
 </details>
 
-# Note
+## Note
 
-Comment out unnecessary apps packages to leave them
+Comment out/uncomment packages names
 
-# Links
+## Links
 
-- [Drivers](https://developer.android.com/studio/run/win-usb)
-- [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)
-- [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
-- [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
+* [Drivers](https://developer.android.com/studio/run/win-usb)
+  * [Official Xiaomi drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
+* [ADB](https://developer.android.com/studio/releases/platform-tools)
+* [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
+* [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
+
 ## Ask a question on
 
-- [MIUI](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
-- [One UI](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
-
+* MIUI
+  * [Mi 10T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
+  * [Mi 9T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
+* One UI
+  * [Galaxy S20](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
