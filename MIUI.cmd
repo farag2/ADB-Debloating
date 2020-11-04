@@ -47,6 +47,9 @@ echo Booking.com
 echo Mi Пульт
 %~dp0adb shell pm uninstall --user 0 com.duokan.phone.remotecontroller
 
+echo eBay Partner Attribution
+%~dp0adb shell pm uninstall --user 0 com.ebay.carrier
+
 echo eBay
 %~dp0adb shell pm uninstall --user 0 com.ebay.mobile
 
