@@ -225,7 +225,7 @@ echo Яндекс
 %~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 echo ZenkitPartnerConfig
-%~dp0adb shell pm uninstall --user 0 ru.yandex.zenkitpartnerconfig
+%~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
 %~dp0adb kill-server
 echo.
