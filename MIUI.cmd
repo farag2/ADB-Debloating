@@ -140,11 +140,17 @@ echo Проводник
 echo Лента виджетов
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
+echo Mi Credit
+%~dp0adb shell pm uninstall --user 0 com.micredit.in
+
 echo Mi Community
 %~dp0adb shell pm uninstall --user 0 com.mi.global.bbs
 
 echo Mi Store
 %~dp0adb shell pm uninstall --user 0 com.mi.global.shop
+
+echo MiDrive
+%~dp0adb shell pm uninstall --user 0 com.miui.newmidrive
 
 echo Mi Mover
 %~dp0adb shell pm uninstall --user 0 com.miui.huanji
@@ -217,6 +223,9 @@ echo TikToks
 
 echo Яндекс
 %~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
+
+echo ZenkitPartnerConfig
+%~dp0adb shell pm uninstall --user 0 ru.yandex.zenkitpartnerconfig
 
 %~dp0adb kill-server
 echo.
