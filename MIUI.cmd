@@ -190,6 +190,7 @@ echo Музыка
 %~dp0adb shell pm uninstall --user 0 com.miui.player
 
 echo Mi Видео
+:: На некоторых устройствах невозможно удалить, а только отключить
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
 
 echo PartnerNetflixActivation
@@ -218,7 +219,7 @@ echo Mi Picks
 echo Дзен
 %~dp0adb shell pm uninstall --user 0 com.yandex.zen
 
-echo TikToks
+echo TikTok
 %~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
 
 echo Яндекс
