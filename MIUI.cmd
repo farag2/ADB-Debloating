@@ -64,11 +64,8 @@ echo Android Accessibility Suite
 
 echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.katana
-
 %~dp0adb shell pm uninstall --user 0 com.facebook.system
-
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
-
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
 
 echo Google Диск
