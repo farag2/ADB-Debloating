@@ -14,7 +14,7 @@ goto :top
 echo WPS Office
 %~dp0adb shell pm uninstall --user 0 cn.wps.moffice_eng
 
-echo Средство просмотра документов Mi (на платформе WPS)
+echo Mi Doc Viewer (Powered by WPS)
 %~dp0adb shell pm uninstall --user 0 cn.wps.xiaomi.abroad.lite
 
 echo Aliexpress
@@ -29,22 +29,22 @@ echo Bookmark Provider
 echo Chrome
 %~dp0adb shell pm uninstall --user 0 com.android.chrome
 
-echo Загрузки
+echo Downloads
 %~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
 
-echo Диктофон
+echo Sound recorder
 %~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
 
-echo Меню SIM-карты
+echo SIM Toolkit
 %~dp0adb shell pm uninstall --user 0 com.android.stk
 
-echo Каталог живых обоев
+echo Live Wallpaper Picker
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
 
 echo Booking.com
 %~dp0adb shell pm uninstall --user 0 com.booking
 
-echo Mi Пульт
+echo Mi Remote
 %~dp0adb shell pm uninstall --user 0 com.duokan.phone.remotecontroller
 
 echo eBay Partner Attribution
@@ -68,19 +68,19 @@ echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
 
-echo Google Диск
+echo Google Drive
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
 
-echo Ассистент
+echo Google Assistant
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.googleassistant
 
-echo Google Новости
+echo Google News
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.magazines
 
-echo Карты
+echo Maps
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.maps
 
-echo Google Фото
+echo Google Photos
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
 
 echo Google Podcasts
@@ -92,7 +92,7 @@ echo Duo
 echo Device Health Services
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.turbo
 
-echo Цифровое благополучие
+echo Digital Wellbeing
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
 echo Gmail
@@ -101,10 +101,10 @@ echo Gmail
 echo Google
 %~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 
-echo Google Play Музыка
+echo Google Play Music
 %~dp0adb shell pm uninstall --user 0 com.google.android.music
 
-echo Google Play Игры
+echo Google Play Games
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 
 echo Android Auto
@@ -113,7 +113,7 @@ echo Android Auto
 echo Android One
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
 
-echo Google Play Фильмы
+echo Google TV
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
 echo Объектив
@@ -122,19 +122,19 @@ echo Объектив
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
 
-echo Mi Браузер
+echo Mi Browser Pro
 :: Невозможно удалить
 %~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
 
-echo Карусель обоев
-:: Невозможно удалить
+echo Mi Wallpaper Carousel
+:: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
-echo Проводник
-:: Становится невозможно выбрать прошивку через 3 точки
+echo File Manager
+:: Becomes unable to install a firmware within the 3 dots
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 
-echo Лента виджетов
+echo App Vault
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
 echo Mi Credit
@@ -152,28 +152,28 @@ echo MiDrive
 echo Mi Mover
 %~dp0adb shell pm uninstall --user 0 com.miui.huanji
 
-echo Быстрые приложения
+echo HybridAccessory
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 
-echo Заметки
+echo MIUI Notes
 %~dp0adb shell pm uninstall --user 0 com.miui.notes
 
-echo Справочник
+echo Yellow Pages
 %~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
 
 echo Analytics
 %~dp0adb shell pm uninstall --user 0 com.miui.analytics
 
-echo Компас
+echo Compass
 %~dp0adb shell pm uninstall --user 0 com.miui.compass
 
-echo FM-радио
+echo FM Radio
 %~dp0adb shell pm uninstall --user 0 com.miui.fm
 
-echo Служба FM радио
+echo FM Radio Service
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
 
-echo Сервисы и обратная связь
+echo Services & Feedback
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
 
 echo ShareMe
@@ -183,11 +183,11 @@ echo ShareMe
 echo msa
 %~dp0adb shell pm uninstall --user 0 com.miui.msa.global
 
-echo Музыка
+echo Mi Music
 %~dp0adb shell pm uninstall --user 0 com.miui.player
 
-echo Mi Видео
-:: На некоторых устройствах невозможно удалить, а только отключить
+echo Mi Video
+:: Unable to uninstall on some devices. Only to disable
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
 
 echo PartnerNetflixActivation
@@ -203,11 +203,11 @@ echo Qualcomm Voice Assist
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
 
-echo Сканер
-:: Становится невозможным сканировать QR-коды через камеру
+echo Mi Scanner
+:: Becoms unable to scan QR codes via Camera app
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
 
-echo Игры
+echo Xiaomi Games
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
 
 echo Mi Picks
