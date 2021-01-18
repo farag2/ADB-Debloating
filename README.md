@@ -17,8 +17,8 @@ Comment out/uncomment packages names
 
 ## Links
 
-* [Drivers](https://developer.android.com/studio/run/win-usb)
-  * [Official Xiaomi drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
+* [Google USB Driver](https://developer.android.com/studio/run/win-usb)
+  * [Official all OEMs drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
 * [ADB](https://developer.android.com/studio/releases/platform-tools)
 * [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
 * [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
