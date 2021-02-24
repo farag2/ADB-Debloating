@@ -6,6 +6,7 @@ https://4pda.ru/forum/index.php?showtopic=987474&st=20#entry97099496
 
 # МегаФон
 https://mobile-review.com/articles/2020/oper-mail-and-news-05-2020-2.shtml
+Узнать, какие номера и лицевые счета оформлены: пустое SMS-сообщение на номер 05001555
 
 # ADB
 New-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\usbflags\18D1D00D0100 -Name SkipContainerIdQuery -PropertyType Binary -Value ([byte[]](01, 00, 00, 00)) -Force
