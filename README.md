@@ -22,6 +22,7 @@ Comment out/uncomment packages names
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
 * [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
 * [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
+* [YouTube Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
 
 ## Ask a question on
 
