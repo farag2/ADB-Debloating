@@ -1,4 +1,4 @@
-# Debloat MIUI 12 & One UI 3.0
+# Debloat MIUI 12 & One UI 3.1
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
