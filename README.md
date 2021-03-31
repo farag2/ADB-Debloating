@@ -1,4 +1,4 @@
-# Debloat MIUI 12 & One UI 2.5
+# Debloat MIUI 12 & One UI 3.0
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
@@ -21,6 +21,7 @@ Comment out/uncomment packages names
   * [Official all OEMs drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
 * [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
+* хADB AppControlъ(https://4pda.ru/forum/index.php?showtopic=993643)
 * [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
 * [YouTube Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
 
