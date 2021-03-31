@@ -6,7 +6,7 @@ cls
 echo.
 echo Uninstall One UI apps?
 echo.
-set /p input="Enter "amen" for "yes"> "
+set /p input="Type "amen" to proceed> "
 if /i "%input%"=="amen" goto :amen
 goto :top
 
@@ -86,6 +86,10 @@ echo Google Play Services for AR
 echo Google Play Фильмы
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
+echo Google Ассистент
+%~dp0adb shell pm uninstall --user 0 com.google.android.hotwordenrollment.xgoogle
+%~dp0adb shell pm uninstall --user 0 com.google.android.hotwordenrollment.okgoogle
+
 echo Google Фото
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
 
@@ -103,6 +107,9 @@ echo OneDrive
 
 echo Outlook
 %~dp0adb shell pm uninstall --user 0 com.microsoft.office.outlook
+
+echo Private Share
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.privateshare
 
 echo Samsung Daily
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.app.spage
@@ -203,6 +210,9 @@ echo Редактор AR-эмодзи
 
 echo Руководство пользователя
 %~dp0adb shell pm uninstall --user 0 com.sec.android.widgetapp.webmanual
+
+echo SIM-карта
+%~dp0adb shell pm uninstall --user 0 com.android.stk
 
 echo Служба Bixby
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.bixby.service
