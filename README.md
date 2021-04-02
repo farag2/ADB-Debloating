@@ -9,7 +9,10 @@ adb shell pm list packages -f > %CD%\packages.txt
 ```
 
 ## How-to
-Place cmd script into downloaded ADB folder
+
+* Place the necessary .cmd script into the downloaded ADB folder
+* Customize the .cmd file
+* Run
 
 ## Note
 
