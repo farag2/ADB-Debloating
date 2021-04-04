@@ -87,8 +87,8 @@ echo Google Play Фильмы
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
 echo Google Ассистент
-%~dp0adb shell pm uninstall --user 0 com.google.android.hotwordenrollment.xgoogle
-%~dp0adb shell pm uninstall --user 0 com.google.android.hotwordenrollment.okgoogle
+%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
+%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
 
 echo Google Фото
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
