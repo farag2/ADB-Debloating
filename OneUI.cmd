@@ -153,6 +153,7 @@ echo SmartThings
 
 echo SwiftKey factory settings
 %~dp0adb shell pm uninstall --user 0 com.touchtype.swiftkey
+%~dp0adb shell pm uninstall --user 0 com.swiftkey.swiftkeyconfigurator
 
 echo Wearable Manager Installer
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.app.watchmanagerstub
