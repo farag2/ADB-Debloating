@@ -6,7 +6,7 @@ cls
 echo.
 echo Uninstall MIUI apps?
 echo.
-set /p input="Enter "amen" for "yes"> "
+set /p input="Type "amen" to proceed> "
 if /i "%input%"=="amen" goto :amen
 goto :top
 
