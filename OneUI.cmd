@@ -151,6 +151,9 @@ echo SmartThings
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.beaconmanager
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.oneconnect
 
+echo Smart Tutor
+%~dp0adb shell pm uninstall --user 0 com.rsupport.rs.activity.rsupport.aas2
+
 echo SwiftKey factory settings
 %~dp0adb shell pm uninstall --user 0 com.touchtype.swiftkey
 %~dp0adb shell pm uninstall --user 0 com.swiftkey.swiftkeyconfigurator
@@ -199,6 +202,9 @@ echo Люди
 
 echo Мои файлы
 %~dp0adb shell pm uninstall --user 0 com.sec.android.app.myfiles
+
+echo Напоминания
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.app.reminder
 
 echo Погода
 %~dp0adb shell pm uninstall --user 0 com.sec.android.daemonapp
