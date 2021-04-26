@@ -12,9 +12,10 @@ adb shell pm list packages -f > %CD%\packages.txt
 
 ## How-to
 
-* Place the necessary .cmd script into the downloaded ADB folder
-* Customize the .cmd file
-* Run
+* Downloaded ADB;
+* Place the necessary .cmd script into the downloaded ADB folder;
+* Customize the .cmd file;
+* Run.
 
 ## Note
 
@@ -28,7 +29,9 @@ Comment out/uncomment packages names
 * [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
 * [ADB AppControl](https://4pda.ru/forum/index.php?showtopic=993643)
 * [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
-* [YouTube Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
+* Vanced
+  * [Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
+  * [How to install Vanced](https://telegra.ph/How-to-install-v15-on-MIUI-02-11)
 
 ## Ask a question on
 
