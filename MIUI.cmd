@@ -173,7 +173,7 @@ echo FM Radio
 echo FM Radio Service
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
 
-echo Services & Feedback
+echo Services ^& Feedback
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
 
 echo ShareMe
