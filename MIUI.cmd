@@ -116,14 +116,14 @@ echo Android One
 echo Google TV
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
-echo Объектив
+echo Google Lens
 %~dp0adb shell pm uninstall --user 0 com.google.ar.lens
 
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
 
 echo Mi Browser Pro
-:: Невозможно удалить
+:: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
 
 echo Mi Wallpaper Carousel
@@ -187,7 +187,7 @@ echo Mi Music
 %~dp0adb shell pm uninstall --user 0 com.miui.player
 
 echo Mi Video
-:: Unable to uninstall on some devices. Only to disable
+:: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
 
 echo PartnerNetflixActivation
@@ -204,7 +204,7 @@ echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
 
 echo Mi Scanner
-:: Becoms unable to scan QR codes via Camera app
+:: Becomes unable to scan QR codes via Camera app
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
 
 echo Xiaomi Games
