@@ -228,14 +228,14 @@ echo TikTok
 echo Яндекс
 %~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
+echo ZenkitPartnerConfig
+%~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
+
 echo PUBG MOBILE Gift Box
 %~dp0adb shell pm uninstall --user 0 com.tencent.igxiaomi
 
 echo Lords Mobile
 %~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
-
-echo ZenkitPartnerConfig
-%~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
 %~dp0adb kill-server
 echo.
