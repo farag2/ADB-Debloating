@@ -20,6 +20,9 @@ echo Mi Doc Viewer (Powered by WPS)
 echo Aliexpress
 %~dp0adb shell pm uninstall --user 0 com.alibaba.aliexpresshd
 
+echo Aliexpress Ru
+%~dp0adb shell pm uninstall --user 0 ru.aliexpress.buyer
+
 echo Юла
 %~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
 
@@ -193,6 +196,9 @@ echo Mi Video
 echo PartnerNetflixActivation
 %~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
 
+echo Netflix
+%~dp0adb shell pm uninstall --user 0 com.netflix.mediaclient
+
 echo Opera
 %~dp0adb shell pm uninstall --user 0 com.opera.browser
 %~dp0adb shell pm uninstall --user 0 com.opera.preinstall
@@ -224,6 +230,12 @@ echo Яндекс
 
 echo ZenkitPartnerConfig
 %~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
+
+echo PUBG MOBILE Gift Box
+%~dp0adb shell pm uninstall --user 0 com.tencent.igxiaomi
+
+echo Lords Mobile
+%~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
 
 %~dp0adb kill-server
 echo.
