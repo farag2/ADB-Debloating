@@ -71,6 +71,9 @@ echo Facebook
 %~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
 %~dp0adb shell pm uninstall --user 0 com.facebook.services
 
+echo Emoji Keyboard
+%~dp0adb shell pm uninstall --user 0 com.facemoji.lite.xiaomi
+
 echo Google Drive
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
 
@@ -111,7 +114,7 @@ echo Google Play Games
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 
 echo Android Auto
-%~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
+:: %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
 echo Android One
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
@@ -125,6 +128,12 @@ echo Google Lens
 echo Google Play Services for AR
 %~dp0adb shell pm uninstall --user 0 com.google.ar.core
 
+echo Lords Mobile
+%~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
+
+echo Kaspersky Internet Security
+%~dp0adb shell pm uninstall --user 0 com.kms.free
+
 echo Mi Browser Pro
 :: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
@@ -135,7 +144,7 @@ echo Mi Wallpaper Carousel
 
 echo File Manager
 :: Becomes unable to install a firmware within the 3 dots
-%~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
+:: %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 
 echo App Vault
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
@@ -206,12 +215,18 @@ echo Opera
 echo Qualcomm Voice Assist
 %~dp0adb shell pm uninstall --user 0 com.quicinc.voice.activation
 
+echo Spotify
+%~dp0adb shell pm uninstall --user 0 com.spotify.music
+
+echo PUBG MOBILE Gift Box
+%~dp0adb shell pm uninstall --user 0 com.tencent.igxiaomi
+
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
 
 echo Mi Scanner
 :: Becomes unable to scan QR codes via Camera app
-%~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
+:: %~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
 
 echo Xiaomi Games
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
@@ -219,23 +234,29 @@ echo Xiaomi Games
 echo Mi Picks
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.mipicks
 
+echo Mi Coin
+%~dp0adb shell pm uninstall --user 0 com.xiaomi.payment
+
 echo Дзен
 %~dp0adb shell pm uninstall --user 0 com.yandex.zen
 
 echo TikTok
 %~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
 
-echo Яндекс
-%~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
+echo Yandex Браузер
+%~dp0adb shell pm uninstall --user 0 com.yandex.browser
 
 echo ZenkitPartnerConfig
 %~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
-echo PUBG MOBILE Gift Box
-%~dp0adb shell pm uninstall --user 0 com.tencent.igxiaomi
+echo yandex satellite
+%~dp0adb shell pm uninstall --user 0 com.yandex.preinstallsatellite
 
-echo Lords Mobile
-%~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
+echo ivi
+%~dp0adb shell pm uninstall --user 0 ru.ivi.client
+
+echo Яндекс
+%~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 %~dp0adb kill-server
 echo.
