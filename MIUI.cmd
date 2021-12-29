@@ -29,6 +29,13 @@ echo Юла
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 
+echo Browser Services
+%~dp0adb shell pm uninstall --user 0 com.android.browser
+
+echo Google Assistant
+%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
+%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
+
 echo Chrome
 %~dp0adb shell pm uninstall --user 0 com.android.chrome
 
@@ -43,6 +50,9 @@ echo SIM Toolkit
 
 echo Live Wallpaper Picker
 %~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
+
+echo Bouygues AppCloud
+%~dp0adb shell pm uninstall --user 0 com.aura.oobe.bouygues
 
 echo Booking.com
 %~dp0adb shell pm uninstall --user 0 com.booking
