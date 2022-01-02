@@ -36,6 +36,7 @@ Comment out/uncomment packages names
 ## Ask a question on
 
 * MIUI
+  * [Mi 11T Pro](https://4pda.to/forum/index.php?showtopic=1032499&st=2320#entry112088380)
   * [Mi 10T](https://4pda.ru/forum/index.php?s=&showtopic=1005145&view=findpost&p=100967182)
   * [Mi 9T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
 * One UI
