@@ -253,13 +253,13 @@ echo Дзен
 echo TikTok
 %~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
 
-echo Yandex Браузер
+echo Яндекс Браузер
 %~dp0adb shell pm uninstall --user 0 com.yandex.browser
 
 echo ZenkitPartnerConfig
 %~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
-echo yandex satellite
+echo Яндекс Satellite
 %~dp0adb shell pm uninstall --user 0 com.yandex.preinstallsatellite
 
 echo ivi
@@ -267,6 +267,12 @@ echo ivi
 
 echo Яндекс
 %~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
+
+echo Linkedin
+%~dp0adb shell pm uninstall --user 0 com.linkedin.android
+
+echo Amazon Shopping
+%~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
 
 %~dp0adb kill-server
 echo.
