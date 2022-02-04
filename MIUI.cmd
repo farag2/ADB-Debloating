@@ -26,33 +26,33 @@ echo Aliexpress Ru
 echo Юла
 %~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
 
-echo Bookmark Provider
-%~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
+::echo Bookmark Provider
+::%~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 
-echo Browser Services
-%~dp0adb shell pm uninstall --user 0 com.android.browser
+::echo Browser Services
+::%~dp0adb shell pm uninstall --user 0 com.android.browser
 
-echo Google Assistant
-%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
-%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
+::echo Google Assistant
+::%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
+::%~dp0adb shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
 
-echo Chrome
-%~dp0adb shell pm uninstall --user 0 com.android.chrome
+::echo Chrome
+::%~dp0adb shell pm uninstall --user 0 com.android.chrome
 
-echo Downloads
-%~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
+::echo Downloads
+::%~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
 
-echo Sound recorder
-%~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
+::echo Sound recorder
+::%~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
 
-echo SIM Toolkit
-%~dp0adb shell pm uninstall --user 0 com.android.stk
+::echo SIM Toolkit
+::%~dp0adb shell pm uninstall --user 0 com.android.stk
 
-echo Live Wallpaper Picker
-%~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
+::echo Live Wallpaper Picker
+::%~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
 
-echo Bouygues AppCloud
-%~dp0adb shell pm uninstall --user 0 com.aura.oobe.bouygues
+::echo Bouygues AppCloud
+::%~dp0adb shell pm uninstall --user 0 com.aura.oobe.bouygues
 
 echo Booking.com
 %~dp0adb shell pm uninstall --user 0 com.booking
@@ -60,83 +60,83 @@ echo Booking.com
 echo Mi Remote
 %~dp0adb shell pm uninstall --user 0 com.duokan.phone.remotecontroller
 
-echo eBay Partner Attribution
-%~dp0adb shell pm uninstall --user 0 com.ebay.carrier
+::echo eBay Partner Attribution
+::%~dp0adb shell pm uninstall --user 0 com.ebay.carrier
 
-echo eBay
-%~dp0adb shell pm uninstall --user 0 com.ebay.mobile
+::echo eBay
+::%~dp0adb shell pm uninstall --user 0 com.ebay.mobile
 
-echo YouTube
-%~dp0adb shell pm uninstall --user 0 com.google.android.youtube
+::echo YouTube
+::%~dp0adb shell pm uninstall --user 0 com.google.android.youtube
 
-echo YouTube Music
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
+::echo YouTube Music
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
 
-echo Android Accessibility Suite
-%~dp0adb shell pm uninstall --user 0 com.google.android.marvin.talkback
+::echo Android Accessibility Suite
+::%~dp0adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 
-echo Facebook
-%~dp0adb shell pm uninstall --user 0 com.facebook.katana
-%~dp0adb shell pm uninstall --user 0 com.facebook.system
-%~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
-%~dp0adb shell pm uninstall --user 0 com.facebook.services
+::echo Facebook
+::%~dp0adb shell pm uninstall --user 0 com.facebook.katana
+::%~dp0adb shell pm uninstall --user 0 com.facebook.system
+::%~dp0adb shell pm uninstall --user 0 com.facebook.appmanager
+::%~dp0adb shell pm uninstall --user 0 com.facebook.services
 
-echo Emoji Keyboard
-%~dp0adb shell pm uninstall --user 0 com.facemoji.lite.xiaomi
+::echo Emoji Keyboard
+::%~dp0adb shell pm uninstall --user 0 com.facemoji.lite.xiaomi
 
-echo Google Drive
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
+::echo Google Drive
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
 
-echo Google Assistant
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.googleassistant
+::echo Google Assistant
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.googleassistant
 
-echo Google News
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.magazines
+::echo Google News
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.magazines
 
-echo Maps
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.maps
+::echo Maps
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.maps
 
-echo Google Photos
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
+::echo Google Photos
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.photos
 
-echo Google Podcasts
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.podcasts
+::echo Google Podcasts
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.podcasts
 
-echo Duo
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.tachyon
+::echo Duo
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.tachyon
 
-echo Device Health Services
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.turbo
+::echo Device Health Services
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.turbo
 
-echo Digital Wellbeing
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
+::echo Digital Wellbeing
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
-echo Gmail
-%~dp0adb shell pm uninstall --user 0 com.google.android.gm
+::echo Gmail
+::%~dp0adb shell pm uninstall --user 0 com.google.android.gm
 
-echo Google
-%~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
+::echo Google
+::%~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 
-echo Google Play Music
-%~dp0adb shell pm uninstall --user 0 com.google.android.music
+::echo Google Play Music
+::%~dp0adb shell pm uninstall --user 0 com.google.android.music
 
-echo Google Play Games
-%~dp0adb shell pm uninstall --user 0 com.google.android.play.games
+::echo Google Play Games
+::%~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 
-echo Android Auto
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
+::echo Android Auto
+::%~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
-echo Android One
-%~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
+::echo Android One
+::%~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
 
-echo Google TV
-%~dp0adb shell pm uninstall --user 0 com.google.android.videos
+::echo Google TV
+::%~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
-echo Google Lens
-%~dp0adb shell pm uninstall --user 0 com.google.ar.lens
+::echo Google Lens
+::%~dp0adb shell pm uninstall --user 0 com.google.ar.lens
 
-echo Google Play Services for AR
-%~dp0adb shell pm uninstall --user 0 com.google.ar.core
+::echo Google Play Services for AR
+::%~dp0adb shell pm uninstall --user 0 com.google.ar.core
 
 echo Lords Mobile
 %~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
@@ -152,7 +152,7 @@ echo Mi Wallpaper Carousel
 :: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
-echo File Manager
+::echo File Manager
 :: Becomes unable to install a firmware within the 3 dots
 :: %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 
@@ -177,8 +177,8 @@ echo Mi Mover
 echo HybridAccessory
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 
-echo MIUI Notes
-%~dp0adb shell pm uninstall --user 0 com.miui.notes
+::echo MIUI Notes
+::%~dp0adb shell pm uninstall --user 0 com.miui.notes
 
 echo Yellow Pages
 %~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
@@ -212,18 +212,18 @@ echo Mi Video
 :: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
 
-echo PartnerNetflixActivation
-%~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
+::echo PartnerNetflixActivation
+::%~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
 
-echo Netflix
-%~dp0adb shell pm uninstall --user 0 com.netflix.mediaclient
+::echo Netflix
+::%~dp0adb shell pm uninstall --user 0 com.netflix.mediaclient
 
-echo Opera
-%~dp0adb shell pm uninstall --user 0 com.opera.browser
-%~dp0adb shell pm uninstall --user 0 com.opera.preinstall
+::echo Opera
+::%~dp0adb shell pm uninstall --user 0 com.opera.browser
+::%~dp0adb shell pm uninstall --user 0 com.opera.preinstall
 
-echo Qualcomm Voice Assist
-%~dp0adb shell pm uninstall --user 0 com.quicinc.voice.activation
+::echo Qualcomm Voice Assist
+::%~dp0adb shell pm uninstall --user 0 com.quicinc.voice.activation
 
 echo Spotify
 %~dp0adb shell pm uninstall --user 0 com.spotify.music
@@ -271,8 +271,8 @@ echo Яндекс
 echo Linkedin
 %~dp0adb shell pm uninstall --user 0 com.linkedin.android
 
-echo Amazon Shopping
-%~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
+::echo Amazon Shopping
+::%~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
 
 %~dp0adb kill-server
 echo.
