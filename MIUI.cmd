@@ -274,6 +274,24 @@ echo Linkedin
 echo Amazon Shopping
 %~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
 
+echo Block Puzzle Guardian
+%~dp0adb shell pm uninstall --user 0 com.block.puzzle.game.hippo.mi
+
+echo Tile Fun
+%~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
+
+echo Bubble Shooter With Friends
+%~dp0adb shell pm uninstall --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
+
+echo Jewels Blast
+%~dp0adb shell pm uninstall --user 0 com.jewelsblast.ivygames.Adventure.free
+
+echo Dust Settle
+%~dp0adb shell pm uninstall --user 0 com.logame.eliminateintruder3d
+
+echo State of Survival
+%~dp0adb shell pm uninstall --user 0 com.kingsgroup.ss.xiaomi
+
 %~dp0adb kill-server
 echo.
 
