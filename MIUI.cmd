@@ -295,6 +295,8 @@ echo State of Survival
 %~dp0adb kill-server
 echo.
 
+taskkill /F /IM adb.exe /T
+
 RMDIR /S /Q %USERPROFILE%\.android
 RMDIR /S /Q %USERPROFILE%\.dbus-keyrings
 pause
