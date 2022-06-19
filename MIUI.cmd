@@ -111,6 +111,9 @@ echo Device Health Services
 echo Digital Wellbeing
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
+echo Google Pay
+:: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
+
 echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
 
