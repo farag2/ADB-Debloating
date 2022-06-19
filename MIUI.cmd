@@ -112,7 +112,6 @@ echo Digital Wellbeing
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
 echo Google Pay
-:: It doesn't work in Russia anymore yet
 :: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
 
 echo Gmail
