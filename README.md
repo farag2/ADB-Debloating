@@ -1,4 +1,4 @@
-# Debloat MIUI 13 Enhanced & One UI 4.1
+# Debloat MIUI 13 & One UI 4.1
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
