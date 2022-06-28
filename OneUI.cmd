@@ -17,11 +17,14 @@ echo Ar Zone
 echo Ar-зарисовка
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.ardrawing
 
+echo Bixby
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.bixby.agent
+
 echo Ar-приложения
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.visionarapps
 
-echo Bixby
-%~dp0adb shell pm uninstall --user 0 com.samsung.android.bixby.agent
+echo Samsung Members
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.voc
 
 echo Bixby Vision
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.visionintelligence
@@ -46,6 +49,9 @@ echo DECO PIC
 
 echo Dex для ПК
 %~dp0adb shell pm uninstall --user 0 com.sec.android.app.dexonpc
+
+echo Smart Switch
+%~dp0adb shell pm uninstall --user 0 com.sec.android.easyMover
 
 echo Device Health Services
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.turbo
@@ -98,6 +104,12 @@ echo Health Service
 
 echo Link Sharing
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.app.simplesharing
+
+echo Netflix
+%~dp0adb shell pm uninstall --user 0 com.netflix.mediaclient
+
+echo PartnerNetflixActivation
+%~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
 
 echo Office
 %~dp0adb shell pm uninstall --user 0 com.microsoft.office.officehubrow
