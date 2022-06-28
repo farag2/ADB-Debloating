@@ -26,7 +26,7 @@ Comment out/uncomment packages names
 * [Google USB Driver](https://developer.android.com/studio/run/win-usb)
   * [Official all OEMs drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
-* [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector)
+* [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec01)
 * [ADB AppControl](https://4pda.ru/forum/index.php?showtopic=993643)
 * [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
 * Vanced
