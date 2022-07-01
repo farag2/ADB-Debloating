@@ -32,6 +32,7 @@ Comment out/uncomment packages names
 * Vanced
   * [Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
   * [How to install Vanced](https://telegra.ph/How-to-install-v15-on-MIUI-02-11)
+* [ReVanced](https://www.reddit.com/r/revancedapp/)
 
 ## Ask a question on
 
