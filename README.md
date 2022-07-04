@@ -10,6 +10,19 @@
 adb shell pm list packages -f > %CD%\packages.txt
 ```
 
+## Copy folder to loca drive
+
+```cmd
+# /storage/emulated/0
+# /sdcard
+
+# Check thw whole filesystem
+adb shell ls /data
+
+adb.exe pull /storage/3039-3538/dcim/camera D:\folder
+adb.exe pull sdcard/DCIM/Camera D:\folder
+```
+
 ## How-to
 
 * Downloaded ADB;
