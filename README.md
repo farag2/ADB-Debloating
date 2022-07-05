@@ -10,7 +10,7 @@
 adb shell pm list packages -f > %CD%\packages.txt
 ```
 
-## Copy folder to loca drive
+## Copy folder to local drive
 
 ```cmd
 # /storage/emulated/0
