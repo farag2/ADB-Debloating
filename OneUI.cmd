@@ -20,6 +20,9 @@ echo Ar-зарисовка
 echo Bixby
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.bixby.agent
 
+echo Galaxy Shop
+%~dp0adb shell pm uninstall --user 0 com.samsung.android.bixby.galaxy
+
 echo Ar-приложения
 %~dp0adb shell pm uninstall --user 0 com.samsung.android.visionarapps
 
