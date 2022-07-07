@@ -257,8 +257,8 @@ echo Яндекс
 %~dp0adb kill-server
 echo.
 
-taskkill /F /IM adb.exe
+taskkill /F /IM adb.exe /T 2>NUL
 
-RMDIR /S /Q %USERPROFILE%\.android
-RMDIR /S /Q %USERPROFILE%\.dbus-keyrings
+RMDIR /S /Q %USERPROFILE%\.android 2>NUL
+RMDIR /S /Q %USERPROFILE%\.dbus-keyrings 2>NUL
 pause
