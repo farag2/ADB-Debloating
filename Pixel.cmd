@@ -14,8 +14,8 @@ goto :top
 echo Google Podcasts
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.podcasts
 
-:: echo Google Pay
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
+echo Google Pay
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
 
 echo Google One
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
@@ -75,8 +75,8 @@ echo Pixel Live Wallpaper
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 
-:: echo Android Auto
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
+echo Android Auto
+%~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
 echo Google
 %~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
@@ -104,6 +104,9 @@ echo Google Support Services
 
 echo Personal Safety
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.safetyhub
+
+echo Google Searchbox
+%~dp0adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox.nga_resources
 
 adb kill-server
 echo.
