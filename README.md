@@ -16,11 +16,11 @@ adb shell pm list packages -f > %CD%\packages.txt
 # /storage/emulated/0
 # /sdcard
 
-# Check thw whole filesystem
+# Check the whole filesystem
 adb shell ls /data
 
-adb.exe pull /storage/3039-3538/dcim/camera D:\folder
-adb.exe pull sdcard/DCIM/Camera D:\folder
+adb pull /storage/3039-3538/dcim/camera D:\folder
+adb pull sdcard/DCIM/Camera D:\folder
 ```
 
 ## How-to
@@ -41,11 +41,8 @@ Comment out/uncomment packages names
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
 * [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec01)
 * [ADB AppControl](https://4pda.ru/forum/index.php?showtopic=993643)
-* [XiaoMiTool V2](https://github.com/francescotescari/XMT/releases)
-* Vanced
-  * [Vanced Troubleshooting](https://telegra.ph/Troubleshooting-for-vanced-03-19)
-  * [How to install Vanced](https://telegra.ph/How-to-install-v15-on-MIUI-02-11)
-* [ReVanced](https://www.reddit.com/r/revancedapp/)
+* [ReVanced](https://github.com/revanced)
+* [My ReVanced Builder](https://github.com/farag2/ReVanced_Builder)
 
 ## Ask a question on
 
