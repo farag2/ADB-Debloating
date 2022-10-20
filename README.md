@@ -40,7 +40,7 @@ Comment out/uncomment packages names
   * [Official all OEMs drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
 * [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec01)
-* [ADB AppControl](https://4pda.ru/forum/index.php?showtopic=993643)
+* [ADB AppControl](https://4pda.to/forum/index.php?showtopic=993643)
 * [ReVanced](https://github.com/revanced)
 * [My ReVanced Builder](https://github.com/farag2/ReVanced_Builder)
 
@@ -48,7 +48,7 @@ Comment out/uncomment packages names
 
 * MIUI
   * [Mi 11T Pro](https://4pda.to/forum/index.php?showtopic=1032499&st=2320#entry112088380)
-  * [Mi 10T](https://4pda.ru/forum/index.php?s=&showtopic=1005145&view=findpost&p=100967182)
-  * [Mi 9T](https://4pda.ru/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
+  * [Mi 10T](https://4pda.to/forum/index.php?s=&showtopic=1005145&view=findpost&p=100967182)
+  * [Mi 9T](https://4pda.to/forum/index.php?s=&showtopic=955101&view=findpost&p=93561572)
 * One UI
-  * [Galaxy S20](https://4pda.ru/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
+  * [Galaxy S20](https://4pda.to/forum/index.php?s=&showtopic=953111&view=findpost&p=97533733)
