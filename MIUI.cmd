@@ -126,6 +126,9 @@ echo Google
 echo Google Play Music
 %~dp0adb shell pm uninstall --user 0 com.google.android.music
 
+echo Google Files
+:: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.nbu
+
 echo Google Play Games
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 
