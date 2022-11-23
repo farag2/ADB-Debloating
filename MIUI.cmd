@@ -57,6 +57,9 @@ echo Bouygues AppCloud
 echo Booking.com
 %~dp0adb shell pm uninstall --user 0 com.booking
 
+echo Crazy Juicer
+%~dp0adb shell pm uninstall --user 0 com.crazy.juicer.xm
+
 echo Mi Remote
 %~dp0adb shell pm uninstall --user 0 com.duokan.phone.remotecontroller
 
@@ -151,6 +154,12 @@ echo Mi Browser Pro
 :: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
 
+echo Tile Fun
+%~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
+
+echo Crazy Juicer
+%~dp0adb shell pm uninstall --user 0 com.crazy.juicer.xm
+
 echo Mi Wallpaper Carousel
 :: Unable to uninstall
 %~dp0adb shell pm disable-user --user 0 com.miui.android.fashiongallery
@@ -230,6 +239,9 @@ echo Qualcomm Voice Assist
 
 echo Spotify
 %~dp0adb shell pm uninstall --user 0 com.spotify.music
+
+echo Bubble Shooter And Friends
+%~dp0adb shell pm uninstall --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
 
 echo PUBG MOBILE Gift Box
 %~dp0adb shell pm uninstall --user 0 com.tencent.igxiaomi
