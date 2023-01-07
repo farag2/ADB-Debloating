@@ -210,6 +210,9 @@ echo FM Radio
 echo FM Radio Service
 %~dp0adb shell pm uninstall --user 0 com.miui.fmservice
 
+echo Personal Safety
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.safetyhub
+
 echo Services ^& Feedback
 %~dp0adb shell pm uninstall --user 0 com.miui.miservice
 
