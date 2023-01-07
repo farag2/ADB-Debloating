@@ -154,8 +154,7 @@ echo Kaspersky Internet Security
 %~dp0adb shell pm uninstall --user 0 com.kms.free
 
 echo Mi Browser Pro
-:: Unable to uninstall
-%~dp0adb shell pm disable-user --user 0 com.mi.globalbrowser
+%~dp0adb shell pm uninstall --user 0 com.mi.globalbrowser
 
 echo Tile Fun
 %~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
@@ -164,8 +163,7 @@ echo Crazy Juicer
 %~dp0adb shell pm uninstall --user 0 com.crazy.juicer.xm
 
 echo Mi Wallpaper Carousel
-:: Unable to uninstall
-%~dp0adb shell pm disable-user --user 0 com.miui.android.fashiongallery
+%~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
 
 echo File Manager
 :: Becomes unable to install a firmware within the 3 dots
