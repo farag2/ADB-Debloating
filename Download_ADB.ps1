@@ -30,6 +30,6 @@ if ($FolderBrowserDialog.SelectedPath)
 
 	Remove-Item -Path "$($FolderBrowserDialog.SelectedPath)\platform-tools.zip" -Force
 
-	[Environment]::SetEnvironmentVariable("ADB", "$($FolderBrowserDialog.SelectedPath)\platform-tools\adb.exe", "User")
-	[Environment]::SetEnvironmentVariable("Fastboot", "$($FolderBrowserDialog.SelectedPath)\platform-tools\fastboot.exe", "User")
+	# [Environment]::SetEnvironmentVariable("ADB", "$($FolderBrowserDialog.SelectedPath)\platform-tools\adb.exe", "User")
+	# [Environment]::SetEnvironmentVariable("Fastboot", "$($FolderBrowserDialog.SelectedPath)\platform-tools\fastboot.exe", "User")
 }
