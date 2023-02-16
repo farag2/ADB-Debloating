@@ -1,0 +1,242 @@
+Ar Zone
+com.samsung.android.arzone
+
+Ar-зарисовка
+com.samsung.android.ardrawing
+
+Bixby
+com.samsung.android.bixby.agent
+
+Galaxy Shop
+com.samsung.android.bixby.galaxy
+
+Ar-приложения
+com.samsung.android.visionarapps
+
+Samsung Members
+com.samsung.android.voc
+
+Bixby Vision
+com.samsung.android.visionintelligence
+
+Bixby Voice
+com.samsung.android.bixby.agent.dummy
+
+Bixby Vision Framework
+com.samsung.android.bixbyvision.framework
+
+Bookmark Provider
+com.android.bookmarkprovider
+
+Briefing
+flipboard.boxer.app
+
+Chrome
+com.android.chrome
+
+DECO PIC
+com.samsung.android.livestickers
+
+Dex для ПК
+com.sec.android.app.dexonpc
+
+Smart Switch
+com.sec.android.easyMover
+
+Device Health Services
+com.google.android.apps.turbo
+
+Duo
+com.google.android.apps.tachyon
+
+Facebook
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services
+
+Galaxy Themes
+com.samsung.android.themestore
+
+Galaxy Wearable
+com.samsung.android.app.watchmanager
+
+Game Booster
+com.samsung.android.game.gametools
+
+Game Launcher
+com.samsung.android.game.gamehome
+
+Game Optimizing Service
+com.samsung.android.game.gos
+
+Gmail
+com.google.android.gm
+
+Google
+com.google.android.googlequicksearchbox
+
+Google Play Services for AR
+com.google.ar.core
+
+Google Play Фильмы
+com.google.android.videos
+
+Google Ассистент
+com.android.hotwordenrollment.xgoogle
+com.android.hotwordenrollment.okgoogle
+
+Google Фото
+com.google.android.apps.photos
+
+Health Service
+com.sec.android.service.health
+
+Link Sharing
+com.samsung.android.app.simplesharing
+
+Netflix
+com.netflix.mediaclient
+
+PartnerNetflixActivation
+com.netflix.partner.activation
+
+Office
+com.microsoft.office.officehubrow
+
+OneDrive
+com.microsoft.skydrive
+
+Outlook
+com.microsoft.office.outlook
+
+Private Share
+com.samsung.android.privateshare
+
+Samsung Daily
+com.samsung.android.app.spage
+
+Samsung DeX
+com.sec.android.desktopmode.uiservice
+
+Samsung Galaxy Friends
+com.samsung.android.mateagent
+
+Samsung Global Goals
+com.samsung.sree
+
+Samsung Health
+com.sec.android.app.shealth
+
+Samsung Internet
+com.sec.android.app.sbrowser
+
+Samsung Kids
+com.sec.android.app.kidshome
+
+Samsung Notes
+com.samsung.android.app.notes
+
+Samsung Pass
+com.samsung.android.authfw
+
+Samsung Pass Provider
+com.samsung.android.samsungpass
+
+Samsung Pay
+com.samsung.android.spay
+
+Secure Folder
+com.samsung.knox.securefolder
+
+SmartThings
+com.samsung.android.beaconmanager
+com.samsung.android.oneconnect
+
+Smart Tutor
+com.rsupport.rs.activity.rsupport.aas2
+
+SwiftKey factory settings
+com.touchtype.swiftkey
+com.swiftkey.swiftkeyconfigurator
+
+Wearable Manager Installer
+com.samsung.android.app.watchmanagerstub
+
+YouTube
+com.google.android.youtube
+
+YouTube Music
+com.google.android.apps.youtube.music
+
+Автозаполнение с Samsung Pass
+com.samsung.android.samsungpassautofill
+
+Включение голосом
+com.samsung.android.bixby.wakeup
+
+Главный экран Samsung DeX
+com.sec.android.app.desktoplauncher
+
+Google Диск
+com.google.android.apps.docs
+
+Диспетчер вашего телефона
+com.microsoft.appmanager
+
+Звукозапись
+com.sec.android.app.voicenote
+
+Карты
+com.google.android.apps.maps
+
+Каталог живых обоев
+com.android.wallpaper.livepicker
+
+Клавиатура Microsoft SwiftKey
+com.touchtype.swiftkey
+
+Клавиатура Samsung
+com.samsung.android.honeyboard
+
+Люди
+com.samsung.android.service.peoplestripe
+
+Мои файлы
+com.sec.android.app.myfiles
+
+Напоминания
+com.samsung.android.app.reminder
+
+Погода
+com.sec.android.daemonapp
+
+Прямая расшифровка
+com.google.audio.hearing.visualization.accessibility.scribe
+
+Редактор AR-эмодзи
+com.samsung.android.aremojieditor
+
+Руководство пользователя
+com.sec.android.widgetapp.webmanual
+
+SIM-карта
+com.android.stk
+
+Служба Bixby
+com.samsung.android.bixby.service
+
+Советы
+com.samsung.android.app.tips
+
+Стикеры AR Emoji
+com.sec.android.mimage.avatarstickers
+
+Сценарии Bixby
+com.samsung.android.app.routines
+
+Установщик Kids
+com.samsung.android.kidsinstaller
+
+Яндекс
+ru.yandex.searchplugin
