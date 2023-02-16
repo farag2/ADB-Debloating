@@ -25,14 +25,7 @@ adb pull sdcard/DCIM/Camera D:\folder
 
 ## How-to
 
-* Downloaded ADB;
-* Place the necessary .cmd script into the downloaded ADB folder;
-* Customize the .cmd file;
 * Run.
-
-## Note
-
-Comment out/uncomment packages names
 
 ## Links
 
