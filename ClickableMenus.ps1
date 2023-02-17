@@ -1,3 +1,8 @@
+<#
+	.LINK
+	https://github.com/jantari/ClickableMenus
+#>
+
 #Requires -Version 5.0
 
 $consoleAPI = @"
@@ -123,7 +128,7 @@ Add-Type $consoleAPI
 [uint32]$UIElementIDAutoAssign = 0
 $UIElementIDsInUse = [System.Collections.Generic.List[uint32]]::new()
 
-$hIn  = [ConsoleAPI]::GetStdHandle( [ConsoleAPI]::STD_INPUT_HANDLE )
+$hIn = [ConsoleAPI]::GetStdHandle( [ConsoleAPI]::STD_INPUT_HANDLE )
 
 class UIForm {
     [uint32]$ID
@@ -164,7 +169,8 @@ class UIForm {
                     Write-Host "$script:ESC(0x$script:ESC(B"
                     [console]::SetCursorPosition($this.X[-1], $i)
                     Write-Host "$script:ESC(0x$script:ESC(B"
-                } else {
+                }
+                else {
                     [console]::SetCursorPosition($this.X[0], $i)
                     Write-Host "$script:ESC(0x$(' ' * ($this.X[-1] - $this.X[0] - 1))x$script:ESC(B"
                 }
@@ -207,9 +213,11 @@ class UIButton : UIElement {
         if ($this.QuitsForm) {
             $script:QUIT_FORM = $true
             return $this
-        } elseif ($this.ClickScript) {
+        }
+        elseif ($this.ClickScript) {
             return $this.ClickScript.Invoke($args)
-        } else {
+        }
+        else {
             return 0
         }
     }
@@ -217,9 +225,11 @@ class UIButton : UIElement {
         if ($this.QuitsForm) {
             $script:QUIT_FORM = $true
             return $this
-        } elseif ($this.ClickScript) {
+        }
+        elseif ($this.ClickScript) {
             return $this.ClickScript.Invoke()
-        } else {
+        }
+        else {
             return 0
         }
     }
@@ -240,9 +250,9 @@ function New-UIForm {
     Param (
         [uint32]$ID = $script:UIElementIDAutoAssign++,
         [string]$Name,
-        [ValidateScript({ $_ -in 0..([console]::WindowWidth)})]
-        [int[]]$X = 0..([console]::WindowWidth  - 1),
-        [ValidateScript({ $_ -in 0..([console]::WindowHeight)})]
+        [ValidateScript({ $_ -in 0..([console]::WindowWidth) })]
+        [int[]]$X = 0..([console]::WindowWidth - 1),
+        [ValidateScript({ $_ -in 0..([console]::WindowHeight) })]
         [int[]]$Y = 0..([console]::WindowHeight - 1),
         [switch]$Border,
         [switch]$ClearScreen,
@@ -270,7 +280,7 @@ function New-UIButton {
         [string]$Text,
         [switch]$QuitsForm,
         [scriptblock]$ClickScript,
-        [int]$X = $host.UI.RawUI.WindowSize.Width  / 2, # Pseudo-Center by default
+        [int]$X = $host.UI.RawUI.WindowSize.Width / 2, # Pseudo-Center by default
         [int]$Y = $host.UI.RawUI.WindowSize.Height / 2, # Center by default
         [ValidateSet('Underline', 'ColorText', 'ColorElement', 'None')]
         [string]$HighlightStyle = 'ColorElement',
@@ -301,7 +311,7 @@ function New-UICheckBox {
         [switch]$Checked,
         [ValidateSet('Underline', 'ColorText', 'ColorElement', 'None')]
         [string]$HighlightStyle = 'None',
-        [int]$X = $host.UI.RawUI.WindowSize.Width  / 2, # Pseudo-Center by default
+        [int]$X = $host.UI.RawUI.WindowSize.Width / 2, # Pseudo-Center by default
         [int]$Y = $host.UI.RawUI.WindowSize.Height / 2, # Center by default
         [int]$TextPadding = 1
     )
@@ -326,7 +336,7 @@ function New-UILabel {
         [uint32]$ID = $script:UIElementIDAutoAssign++,
         [Parameter( Mandatory = $true )]
         [string]$Text,
-        [int]$X = $host.UI.RawUI.WindowSize.Width  / 2, # Pseudo-Center by default
+        [int]$X = $host.UI.RawUI.WindowSize.Width / 2, # Pseudo-Center by default
         [int]$Y = $host.UI.RawUI.WindowSize.Height / 2, # Center by default
         [int]$TextPadding = 0
     )
@@ -350,7 +360,7 @@ function Show-UIButton {
     )
 
     process {
-        $ButtonContent  = "$(' ' * $Button.TextPadding)$($Button.Text)$(' ' * $Button.TextPadding)"
+        $ButtonContent = "$(' ' * $Button.TextPadding)$($Button.Text)$(' ' * $Button.TextPadding)"
         $absoluteYcoord = Get-AbsoluteYCoordinates -Y $Button.Y
 
         if ($Highlight) {
@@ -374,7 +384,8 @@ function Show-UIButton {
                 }
                 default {}
             }
-        } else {
+        }
+        else {
             [console]::SetCursorPosition($Button.X[0], $absoluteYcoord[0])
             Write-Host "$ESC(0l$("q" * $ButtonContent.Length)k$ESC(B"
             [console]::SetCursorPosition($Button.X[0], $absoluteYcoord[1])
@@ -402,14 +413,16 @@ function Show-UICheckBox {
                 'Underline' {
                     if ($Checkbox.Checked) {
                         Write-Host "$ESC[4m[X]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)$ESC[0m"
-                    } else {
+                    }
+                    else {
                         Write-Host "$ESC[4m[ ]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)$ESC[0m"
                     }
                 }
                 'ColorElement' {
                     if ($Checkbox.Checked) {
                         Write-Host "[X]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)" -ForegroundColor $Host.UI.RawUI.BackgroundColor -BackgroundColor $Host.UI.RawUI.ForegroundColor
-                    } else {
+                    }
+                    else {
                         Write-Host "[ ]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)" -ForegroundColor $Host.UI.RawUI.BackgroundColor -BackgroundColor $Host.UI.RawUI.ForegroundColor
                     }
                 }
@@ -419,11 +432,13 @@ function Show-UICheckBox {
                 }
                 default {}
             }
-        } else {
+        }
+        else {
             [console]::SetCursorPosition($Checkbox.X[0], $absoluteYcoords[0])
             if ($Checkbox.Checked) {
                 Write-Host "[X]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)"
-            } else {
+            }
+            else {
                 Write-Host "[ ]$(' ' * $Checkbox.TextPadding)$($Checkbox.Text)"
             }
         }
@@ -467,8 +482,8 @@ function Wait-UIClick {
         # ENABLE_MOUSE_INPUT    0x0010
         # ENABLE_EXTENDED_FLAGS 0x0080
         # ENABLE_WINDOW_INPUT   0x0008
-        [uint32]$oldConMode  =  0
-        $formReturnValue     = -1
+        [uint32]$oldConMode = 0
+        $formReturnValue = -1
         $null = [ConsoleAPI]::GetConsoleMode($hIn, [ref]$oldConMode)
         $null = [ConsoleAPI]::SetConsoleMode($hIn, 0x0010 -bor 0x0080 -bor 0x0008)
         [console]::CursorVisible = $false
@@ -495,7 +510,8 @@ function Wait-UIClick {
                                 $null = Show-UICheckBox -Checkbox $UIElement -Highlight
                             }
                         }
-                    } else {
+                    }
+                    else {
                         # Restore normal look, as mouse pointer is now off the element
                         switch ($UIElement.GetType().Name) {
                             'UIButton' {
@@ -507,7 +523,8 @@ function Wait-UIClick {
                         }
                     }
                 }
-            } elseif ($lpBuffer.MouseEvent.dwButtonState -eq 0x01) {
+            }
+            elseif ($lpBuffer.MouseEvent.dwButtonState -eq 0x01) {
                 # single left click event
                 foreach ($UIElement in $UIElements) {
                     if (($lpBuffer.MouseEvent.dwMousePosition.X -in $UIElement.X) -and ($lpBuffer.MouseEvent.dwMousePosition.Y -in (Get-AbsoluteYCoordinates -Y $UIElement.Y))) {
@@ -523,7 +540,8 @@ function Wait-UIClick {
                         }
                     }
                 }
-            } elseif ($lpBuffer.KeyEvent.wVirtualKeyCode -eq 0x1B) {
+            }
+            elseif ($lpBuffer.KeyEvent.wVirtualKeyCode -eq 0x1B) {
                 # User pressed ESCAPE, we'll return -1
                 $formReturnValue = -1
                 $QUIT_FORM = $true
