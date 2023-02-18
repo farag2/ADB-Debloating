@@ -22,16 +22,19 @@ do {
         { $_ -eq "unauthorized" } {
             Write-Host -Object "Your device is unauthorized." -ForegroundColor Red
             Write-Host -Object 'Please select checkbox "Always allow from this computer" and press "Allow".'
+            Write-Host -Object "Recheck after 10 seconds..."
             Start-Sleep -Seconds 10
         }
         { $_ -eq "disconnected" } {
             Write-Host -Object "Your device isn't connected or USB debbuging isn't on." -ForegroundColor Red
             Write-Host -Object "Please connect your device and turn on USB debbuging."
+            Write-Host -Object "Recheck after 10 seconds..."
             Start-Sleep -Seconds 10
         }
         { $_ -eq "multiple" } {
             Write-Host -Object "You have connected multiple devices." -ForegroundColor Red
             Write-Host -Object "Please disconnect unnecessary ones."
+            Write-Host -Object "Recheck after 10 seconds..."
             Start-Sleep -Seconds 10
         }
     }
