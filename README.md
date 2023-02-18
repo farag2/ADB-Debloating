@@ -4,12 +4,6 @@
 
 <a href="https://yoomoney.ru/to/4100116615568835"><img src="https://yoomoney.ru/i/shop/iomoney_logo_color_example.png" width=220px height=46px></a>
 
-## Get apps packages list
-
-```cmd
-adb shell pm list packages -f > %CD%\packages.txt
-```
-
 ## Copy folder to local drive
 
 ```cmd
