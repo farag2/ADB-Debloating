@@ -41,3 +41,11 @@ function Test-AdbConnection {
         { $PSItem -eq "" } { return "disconnected" }
     }
 }
+
+function Get-InstalledPackages {
+    $packages = @()
+    .$adb shell pm list packages | ForEach-Object {
+        $packages += $PSItem -replace ("package:", "")
+    }
+    return $packages
+}

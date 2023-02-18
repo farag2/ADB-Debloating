@@ -40,4 +40,6 @@ do {
     }
 } until ($connectionStatus -eq "connected")
 
+Get-InstalledPackages
+
 Stop-Adb
