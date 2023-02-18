@@ -22,16 +22,16 @@ function Get-PlatformTools {
 }
 
 function Start-Adb {
-    $adb = "$PSScriptRoot\platform-tools\adb.exe"
-    .$adb start-server
+    $Env:adb = "$PSScriptRoot\platform-tools\adb.exe"
+    .$Env:adb start-server
 }
 
 function Stop-Adb {
-    .$adb kill-server
+    .$Env:adb kill-server
 }
 
 function Test-AdbConnection {
-    $devices = .$adb devices
+    $devices = .$Env:adb devices
     if ($devices.Length -gt 3) {
         return "multiple"
     }
@@ -44,8 +44,31 @@ function Test-AdbConnection {
 
 function Get-InstalledPackages {
     $packages = @()
-    .$adb shell pm list packages | ForEach-Object {
+    .$Env:adb shell pm list packages | ForEach-Object {
         $packages += $PSItem -replace ("package:", "")
     }
     return $packages
+}
+
+function Wait-Retry {
+    param (
+        [Parameter(Mandatory)]
+        [ValidateScript({ $_ -gt 0 })]
+        [int]$Seconds
+    )
+    
+    Write-Host -Object "Retry after $seconds seconds..."
+    for ($i = 0; $i -lt $seconds; $i++ ) {
+        $Parameters = @{
+            Activity        = "Waiting..."
+            Status          = "Seconds remaining:$($seconds-$i)"
+            PercentComplete = $([int]$i / $seconds * 100)
+        }
+        # PowerShell displays 0% as 100%
+        if ($Parameters.PercentComplete -eq 0) {
+            $Parameters.PercentComplete = 1
+        }
+        Write-Progress @Parameters
+        Start-Sleep -Seconds 1
+    }
 }
