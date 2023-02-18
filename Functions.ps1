@@ -56,9 +56,8 @@ function Wait-Retry {
         [ValidateScript({ $_ -gt 0 })]
         [int]$Seconds
     )
-    
     Write-Host -Object "Retry after $seconds seconds..."
-    for ($i = 0; $i -lt $seconds; $i++ ) {
+    for ($i = 0; $i -lt $seconds; $i++) {
         $Parameters = @{
             Activity        = "Waiting..."
             Status          = "Seconds remaining:$($seconds-$i)"
