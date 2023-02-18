@@ -8,7 +8,6 @@ function Get-PlatformTools {
         Uri             = "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
         OutFile         = "$PSScriptRoot\platform-tools.zip"
         UseBasicParsing = $true
-        Verbose         = $true
     }
     Invoke-WebRequest @Parameters
 
@@ -16,7 +15,6 @@ function Get-PlatformTools {
         Path            = "$PSScriptRoot\platform-tools.zip"
         DestinationPath = $PSScriptRoot
         Force           = $true
-        Verbose         = $true
     }
     Expand-Archive @Parameters
 
