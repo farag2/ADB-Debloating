@@ -22,3 +22,24 @@ function Get-PlatformTools {
 
     Remove-Item -Path "$PSScriptRoot\platform-tools.zip" -Force
 }
+
+function Start-Adb {
+    $adb = "$PSScriptRoot\platform-tools\adb.exe"
+    .$adb start-server
+}
+
+function Stop-Adb {
+    .$adb kill-server
+}
+
+function Test-AdbConnection {
+    $devices = .$adb devices
+    if ($devices.Length -gt 3) {
+        return "multiple"
+    }
+    switch ($devices[1]) {
+        { $PSItem -match "device" } { return "connected" }
+        { $PSItem -match "unauthorized" } { return "unauthorized" }
+        { $PSItem -eq "" } { return "disconnected" }
+    }
+}
