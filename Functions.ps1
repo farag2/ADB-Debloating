@@ -71,3 +71,25 @@ function Wait-Retry {
         Start-Sleep -Seconds 1
     }
 }
+
+function Get-PackagesToUninstall {
+    param (
+        [Parameter(Mandatory)]
+        [array]$Packages,
+
+        [Parameter(Mandatory)]
+        [array]$List
+    )
+    $packagesToUninstall = @()
+    foreach ($package in $Packages) {
+        $List | ForEach-Object {
+            if ($package -eq $PSItem.Package) {
+                $packagesToUninstall += @{
+                    Name    = $PSItem.Name
+                    Package = $package
+                }
+            }
+        }
+    }
+    return $packagesToUninstall
+}

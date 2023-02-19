@@ -37,6 +37,10 @@ do {
     }
 } until ($connectionStatus -eq "connected")
 
-Get-InstalledPackages
+$Parameters = @{
+    Packages = Get-InstalledPackages
+    List     = Get-Content -Path $PSScriptRoot\Uninstall-List.json -Raw | ConvertFrom-Json
+}
+Get-PackagesToUninstall @Parameters
 
 Stop-Adb
