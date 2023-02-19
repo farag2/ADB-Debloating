@@ -1,4 +1,4 @@
-# Debloat MIUI 13, One UI 4.1, Pixel Launcher via ADB
+# Debloat MIUI 13, One UI 4.1, Pixel via ADB
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
