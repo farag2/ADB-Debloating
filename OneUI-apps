@@ -12,14 +12,3 @@ com.samsung.android.game.gos
 
 Health Service
 com.sec.android.service.health
-
-SmartThings
-com.samsung.android.beaconmanager
-com.samsung.android.oneconnect
-
-SwiftKey factory settings
-com.touchtype.swiftkey
-com.swiftkey.swiftkeyconfigurator
-
-Каталог живых обоев
-com.android.wallpaper.livepicker
