@@ -43,6 +43,7 @@ echo Downloads
 %~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
 
 echo Sound recorder
+:: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
 
 echo SIM Toolkit
@@ -115,7 +116,10 @@ echo Digital Wellbeing
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
 echo Google Pay
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.walletnfcrel
+
+echo Google Find My Device
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.adm
 
 echo Gmail
 %~dp0adb shell pm uninstall --user 0 com.google.android.gm
@@ -127,13 +131,13 @@ echo Google Play Music
 %~dp0adb shell pm uninstall --user 0 com.google.android.music
 
 echo Google Files
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.apps.nbu
+%~dp0adb shell pm uninstall --user 0 com.google.android.apps.nbu.files
 
 echo Google Play Games
 %~dp0adb shell pm uninstall --user 0 com.google.android.play.games
 
 echo Android Auto
-:: %~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
+%~dp0adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
 echo Android One
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
@@ -191,6 +195,7 @@ echo HybridAccessory
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 
 echo MIUI Notes
+:: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.miui.notes
 
 echo Yellow Pages
@@ -200,6 +205,7 @@ echo Analytics
 %~dp0adb shell pm uninstall --user 0 com.miui.analytics
 
 echo Compass
+:: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.miui.compass
 
 echo FM Radio
@@ -227,6 +233,9 @@ echo Mi Music
 echo Mi Video
 :: Unable to uninstall on some devices
 %~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
+
+echo Mobile Legends: Bang Bang
+%~dp0adb shell pm uninstall --user 0 com.mobilelegends.mi
 
 echo PartnerNetflixActivation
 %~dp0adb shell pm uninstall --user 0 com.netflix.partner.activation
@@ -310,6 +319,12 @@ echo Dust Settle
 
 echo State of Survival
 %~dp0adb shell pm uninstall --user 0 com.kingsgroup.ss.xiaomi
+
+echo Ozon
+%~dp0adb shell pm uninstall --user 0 ru.ozon.app.android
+
+echo RuStore
+%~dp0adb shell pm uninstall --user 0 ru.vk.store
 
 %~dp0adb kill-server
 echo.
