@@ -20,11 +20,11 @@ echo Mi Doc Viewer (Powered by WPS)
 echo Aliexpress
 %~dp0adb shell pm uninstall --user 0 com.alibaba.aliexpresshd
 
-echo Aliexpress Ru
-%~dp0adb shell pm uninstall --user 0 ru.aliexpress.buyer
-
 echo Юла
 %~dp0adb shell pm uninstall --user 0 com.allgoritm.youla
+
+echo Amazon Shopping
+%~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
 
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
@@ -43,8 +43,8 @@ echo Downloads
 %~dp0adb shell pm uninstall --user 0 com.android.providers.downloads.ui
 
 echo Sound recorder
-:: Unable to uninstall on some devices
-%~dp0adb shell pm uninstall --user 0 com.android.soundrecorder
+:: Unable to uninstall
+%~dp0adb shell pm disable-user com.android.soundrecorder
 
 echo SIM Toolkit
 %~dp0adb shell pm uninstall --user 0 com.android.stk
@@ -54,6 +54,9 @@ echo Live Wallpaper Picker
 
 echo Bouygues AppCloud
 %~dp0adb shell pm uninstall --user 0 com.aura.oobe.bouygues
+
+echo Block Puzzle Guardian
+%~dp0adb shell pm uninstall --user 0 com.block.puzzle.game.hippo.mi
 
 echo Booking.com
 %~dp0adb shell pm uninstall --user 0 com.booking
@@ -87,6 +90,9 @@ echo Facebook
 
 echo Emoji Keyboard
 %~dp0adb shell pm uninstall --user 0 com.facemoji.lite.xiaomi
+
+echo Jewels Blast
+%~dp0adb shell pm uninstall --user 0 com.jewelsblast.ivygames.Adventure.free
 
 echo Google Drive
 %~dp0adb shell pm uninstall --user 0 com.google.android.apps.docs
@@ -154,8 +160,24 @@ echo Google Play Services for AR
 echo Lords Mobile
 %~dp0adb shell pm uninstall --user 0 com.igg.android.lordsmobile
 
+echo Emoji Keyboard
+:: Unable to uninstall
+%~dp0adb shell pm disable-user com.preff.kb.xm
+
+echo State of Survival
+%~dp0adb shell pm uninstall --user 0 com.kingsgroup.ss.xiaomi
+
 echo Kaspersky Internet Security
 %~dp0adb shell pm uninstall --user 0 com.kms.free
+
+echo Linkedin
+%~dp0adb shell pm uninstall --user 0 com.linkedin.android
+
+echo Dust Settle
+%~dp0adb shell pm uninstall --user 0 com.logame.eliminateintruder3d
+
+echo Tile Fun
+%~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
 
 echo Mi Browser Pro
 %~dp0adb shell pm uninstall --user 0 com.mi.globalbrowser
@@ -163,15 +185,8 @@ echo Mi Browser Pro
 echo Tile Fun
 %~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
 
-echo Crazy Juicer
-%~dp0adb shell pm uninstall --user 0 com.crazy.juicer.xm
-
 echo Mi Wallpaper Carousel
 %~dp0adb shell pm uninstall --user 0 com.miui.android.fashiongallery
-
-echo File Manager
-:: Becomes unable to install a firmware within the 3 dots
-:: %~dp0adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 
 echo App Vault
 %~dp0adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
@@ -195,8 +210,8 @@ echo HybridAccessory
 %~dp0adb shell pm uninstall --user 0 com.miui.hybrid
 
 echo MIUI Notes
-:: Unable to uninstall on some devices
-%~dp0adb shell pm uninstall --user 0 com.miui.notes
+:: Unable to uninstall
+%~dp0adb shell pm disable-user com.miui.notes
 
 echo Yellow Pages
 %~dp0adb shell pm uninstall --user 0 com.miui.yellowpage
@@ -205,8 +220,8 @@ echo Analytics
 %~dp0adb shell pm uninstall --user 0 com.miui.analytics
 
 echo Compass
-:: Unable to uninstall on some devices
-%~dp0adb shell pm uninstall --user 0 com.miui.compass
+:: Unable to uninstall
+%~dp0adb shell pm disable-user com.miui.compass
 
 echo FM Radio
 %~dp0adb shell pm uninstall --user 0 com.miui.fm
@@ -231,8 +246,8 @@ echo Mi Music
 %~dp0adb shell pm uninstall --user 0 com.miui.player
 
 echo Mi Video
-:: Unable to uninstall on some devices
-%~dp0adb shell pm uninstall --user 0 com.miui.videoplayer
+:: Unable to uninstall
+%~dp0adb shell pm disable-user com.miui.videoplayer
 
 echo Mobile Legends: Bang Bang
 %~dp0adb shell pm uninstall --user 0 com.mobilelegends.mi
@@ -262,10 +277,6 @@ echo PUBG MOBILE Gift Box
 echo Joyose
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.joyose
 
-echo Mi Scanner
-:: Becomes unable to scan QR codes via Camera app
-:: %~dp0adb shell pm uninstall --user 0 com.xiaomi.scanner
-
 echo Xiaomi Games
 %~dp0adb shell pm uninstall --user 0 com.xiaomi.glgm
 
@@ -278,47 +289,23 @@ echo Mi Coin
 echo Дзен
 %~dp0adb shell pm uninstall --user 0 com.yandex.zen
 
-echo TikTok
-%~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
-
 echo Яндекс Браузер
 %~dp0adb shell pm uninstall --user 0 com.yandex.browser
-
-echo ZenkitPartnerConfig
-%~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
 echo Яндекс Satellite
 %~dp0adb shell pm uninstall --user 0 com.yandex.preinstallsatellite
 
+echo ZenkitPartnerConfig
+%~dp0adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
+
+echo TikTok
+%~dp0adb shell pm uninstall --user 0 com.zhiliaoapp.musically
+
+echo Aliexpress Ru
+%~dp0adb shell pm uninstall --user 0 ru.aliexpress.buyer
+
 echo ivi
 %~dp0adb shell pm uninstall --user 0 ru.ivi.client
-
-echo Яндекс
-%~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
-
-echo Linkedin
-%~dp0adb shell pm uninstall --user 0 com.linkedin.android
-
-echo Amazon Shopping
-%~dp0adb shell pm uninstall --user 0 com.amazon.mShop.android.shopping
-
-echo Block Puzzle Guardian
-%~dp0adb shell pm uninstall --user 0 com.block.puzzle.game.hippo.mi
-
-echo Tile Fun
-%~dp0adb shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
-
-echo Bubble Shooter With Friends
-%~dp0adb shell pm uninstall --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
-
-echo Jewels Blast
-%~dp0adb shell pm uninstall --user 0 com.jewelsblast.ivygames.Adventure.free
-
-echo Dust Settle
-%~dp0adb shell pm uninstall --user 0 com.logame.eliminateintruder3d
-
-echo State of Survival
-%~dp0adb shell pm uninstall --user 0 com.kingsgroup.ss.xiaomi
 
 echo Ozon
 %~dp0adb shell pm uninstall --user 0 ru.ozon.app.android
@@ -326,8 +313,10 @@ echo Ozon
 echo RuStore
 %~dp0adb shell pm uninstall --user 0 ru.vk.store
 
+echo Яндекс
+%~dp0adb shell pm uninstall --user 0 ru.yandex.searchplugin
+
 %~dp0adb kill-server
-echo.
 
 taskkill /F /IM adb.exe /T 2>NUL
 
