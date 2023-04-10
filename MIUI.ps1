@@ -8,9 +8,18 @@ if (-not (Test-Path -Path $PSScriptRoot\adb.exe))
 	exit
 }
 
-$Proceed = Read-Host -Prompt "Uninstall MIUI apps?`nType `"amen`" to proceed"
-if ($Proceed -eq "amen")
-{}
+do
+{
+	$Proceed = Read-Host -Prompt "Uninstall MIUI apps?`nType `"amen`" to proceed"
+	if ($Proceed -ne "amen")
+	{
+		continue
+	}
+}
+until ($Proceed -eq "amen")
+
+& $PSScriptRoot\adb.exe wait-for-device
+pause
 
 Write-Warning -Message "WPS Office"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 cn.wps.moffice_eng
