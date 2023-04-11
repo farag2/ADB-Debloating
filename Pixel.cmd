@@ -66,9 +66,6 @@ echo Chrome
 echo Google TV
 %~dp0adb shell pm uninstall --user 0 com.google.android.videos
 
-echo Pixel Live Wallpaper
-%~dp0adb shell pm uninstall --user 0 com.android.wallpaper.livewallpaper
-
 echo Bookmark Provider
 %~dp0adb shell pm uninstall --user 0 com.android.bookmarkprovider
 
