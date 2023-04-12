@@ -187,6 +187,9 @@ Write-Warning -Message Linkedin
 Write-Warning -Message "Dust Settle"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.logame.eliminateintruder3d
 
+Write-Warning -Message "App Vault"
+& $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mi.globalminusscreen
+
 Write-Warning -Message "Tile Fun"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
 
