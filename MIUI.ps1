@@ -189,6 +189,7 @@ Write-Warning -Message "Dust Settle"
 
 Write-Warning -Message "App Vault"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mi.globalminusscreen
+& $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
 Write-Warning -Message "Tile Fun"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mintgames.triplecrush.tile.fun
@@ -201,9 +202,6 @@ Write-Warning -Message "Tile Fun"
 
 Write-Warning -Message "Mi Wallpaper Carousel"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.miui.android.fashiongallery
-
-Write-Warning -Message "App Vault"
-& $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
 Write-Warning -Message "Mi Credit"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.micredit.in
