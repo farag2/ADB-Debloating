@@ -1,0 +1,129 @@
+[
+    {
+        "Name":  "Amazon Shopping",
+        "Package":  "com.amazon.mShop.android.shopping"
+    },
+    {
+        "Name":  "Android Auto",
+        "Package":  "com.google.android.projection.gearhead"
+    },
+    {
+        "Name":  "Bookmark Provider",
+        "Package":  "com.android.bookmarkprovider"
+    },
+    {
+        "Name":  "Chrome",
+        "Package":  "com.android.chrome"
+    },
+    {
+        "Name":  "Digital Wellbeing",
+        "Package":  "com.google.android.apps.wellbeing"
+    },
+    {
+        "Name":  "Documents",
+        "Package":  "com.google.android.apps.docs.editors.docs"
+    },
+    {
+        "Name":  "Duo",
+        "Package":  "com.google.android.apps.tachyon"
+    },
+    {
+        "Name":  "Family Link child and teen",
+        "Package":  "com.google.android.apps.kids.familylinkhelper"
+    },
+    {
+        "Name":  "Gmail",
+        "Package":  "com.google.android.gm"
+    },
+    {
+        "Name":  "Google",
+        "Package":  "com.google.android.googlequicksearchbox"
+    },
+    {
+        "Name":  "Google Assistant",
+        "Package":  [
+                        "com.android.hotwordenrollment.xgoogle",
+                        "com.android.hotwordenrollment.okgoogle"
+                    ]
+    },
+    {
+        "Name":  "Google Drive",
+        "Package":  "com.google.android.apps.docs"
+    },
+    {
+        "Name":  "Google Files",
+        "Package":  "com.google.android.apps.nbu.files"
+    },
+    {
+        "Name":  "Google Location History",
+        "Package":  "com.google.android.gms.location.history"
+    },
+    {
+        "Name":  "Google News",
+        "Package":  "com.google.android.apps.magazines"
+    },
+    {
+        "Name":  "Google One",
+        "Package":  "com.google.android.apps.subscriptions.red"
+    },
+    {
+        "Name":  "Google Pay",
+        "Package":  "com.google.android.apps.walletnfcrel"
+    },
+    {
+        "Name":  "Google Podcasts",
+        "Package":  "com.google.android.apps.podcasts"
+    },
+    {
+        "Name":  "Google Searchbox",
+        "Package":  "com.google.android.googlequicksearchbox.nga_resources"
+    },
+    {
+        "Name":  "Google Support Services",
+        "Package":  "com.google.android.apps.helprtc"
+    },
+    {
+        "Name":  "Google TV",
+        "Package":  "com.google.android.videos"
+    },
+    {
+        "Name":  "Maps",
+        "Package":  "com.google.android.apps.maps"
+    },
+    {
+        "Name":  "My Verizon Services",
+        "Package":  "com.verizon.mips.services"
+    },
+    {
+        "Name":  "Personal Safety",
+        "Package":  "com.google.android.apps.safetyhub"
+    },
+    {
+        "Name":  "Pixel Buds",
+        "Package":  "com.google.android.apps.wearables.maestro.companion"
+    },
+    {
+        "Name":  "Pixel Live Wallpaper",
+        "Package":  "com.google.pixel.livewallpaper"
+    },
+    {
+        "Name":  "Pixel Tips",
+        "Package":  "com.google.android.apps.tips"
+    },
+    {
+        "Name":  "SIM Toolkit",
+        "Package":  "com.android.stk"
+    },
+    {
+        "Name":  "Sound recorder",
+        "Package":  "com.google.android.apps.recorder"
+    },
+    {
+        "Name":  "YouTube",
+        "Package":  "com.google.android.youtube"
+    },
+    {
+        "Name":  "YouTube Music",
+        "Package":  "com.google.android.apps.youtube.music"
+    }
+]
