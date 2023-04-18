@@ -45,6 +45,7 @@ Write-Warning -Message "Browser Services"
 Write-Warning -Message "Google Assistant"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
+& $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.google.android.apps.googleassistant
 
 Write-Warning -Message Chrome
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.android.chrome
@@ -112,8 +113,7 @@ Write-Warning -Message "Jewels Blast"
 Write-Warning -Message "Google Drive"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.google.android.apps.docs
 
-Write-Warning -Message "Google Assistant"
-& $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.google.android.apps.googleassistant
+
 
 Write-Warning -Message "Google News"
 & $PSScriptRoot\adb.exe shell pm uninstall --user 0 com.google.android.apps.magazines
