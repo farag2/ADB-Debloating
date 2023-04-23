@@ -1,7 +1,7 @@
 if (-not (Test-Path -Path $PSScriptRoot\platform-tools\adb.exe))
 {
 	Write-Warning -Message "Place adb.exe to the folder root"
-	Start-Process -FilePath "https://github.com/farag2/ADB-Debloating/blob/master/Download_ADB.ps1"
+	Start-Process -FilePath "https://github.com/farag2/ADB-Debloating/blob/master/src/Download_ADB.ps1"
 
 	pause
 	exit
