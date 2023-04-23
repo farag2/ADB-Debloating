@@ -1,5 +1,12 @@
 # Debloat MIUI 14, One UI 5.1, Pixel Launcher via ADB
 
+[telegram-news-badge]: https://img.shields.io/badge/Sophia%20News-Telegram-blue?style=flat&logo=Telegram
+[telegram-news]: https://t.me/sophianews
+[telegram-group]: https://t.me/sophia_chat
+[telegram-group-badge]: https://img.shields.io/badge/Sophia%20Chat-Telegram-blue?style=flat&logo=Telegram
+
+[![Telegram][telegram-news-badge]][telegram-news] [![Telegram][telegram-group-badge]][telegram-group]
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q51QUJC)
 
 <a href="https://yoomoney.ru/to/4100116615568835"><img src="https://yoomoney.ru/i/shop/iomoney_logo_color_example.png" width=220px height=46px></a>
@@ -7,7 +14,7 @@
 ## Get apps packages list
 
 ```cmd
-adb shell pm list packages -f > %CD%\packages.txt
+adb.exe shell pm list packages -f > D:\packages.txt
 ```
 
 ## Copy folder to local drive
@@ -23,6 +30,10 @@ adb pull /storage/3039-3538/dcim/camera D:\folder
 adb pull sdcard/DCIM/Camera D:\folder
 ```
 
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/10544660/233859224-6bb2e199-3833-4238-a670-aa98960e3801.png)
+
 ## How-to
 
 * Connect phone to PC via USB cable;
@@ -30,10 +41,6 @@ adb pull sdcard/DCIM/Camera D:\folder
 * Download and expand latest release archive;
 * Download ADB via `Download_ADB.ps1`;
 * Run `Function.ps1`.
-
-## Note
-
-Comment out/uncomment packages names
 
 ## Links
 
