@@ -15,7 +15,7 @@ jobs:
         run: |
           $Parameters = @{
              Path             = "src"
-             DestinationPath  = "src\ADB.zip"
+             DestinationPath  = "ADB.zip"
              CompressionLevel = "Fastest"
              Force            = $true
           }
