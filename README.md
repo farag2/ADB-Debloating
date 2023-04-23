@@ -25,10 +25,11 @@ adb pull sdcard/DCIM/Camera D:\folder
 
 ## How-to
 
-* Downloaded ADB;
-* Place the necessary .cmd script into the downloaded ADB folder;
-* Customize the .cmd file;
-* Run.
+* Connect phone to PC via USB cable;
+* Enable USB debugging in your phone OS;
+* Download and expand latest release archive;
+* Download ADB via `Download_ADB.ps1`;
+* Run `Function.ps1`.
 
 ## Note
 

@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    tags:
+      - "*.*"
+
+jobs:
+  patch:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@main
+      - name: Dependencies
+        run: |
+          $Parameters = @{
+             Path             = "src"
+             DestinationPath  = "ADB.zip"
+             CompressionLevel = "Fastest"
+             Force            = $true
+          }
+          Compress-Archive @Parameters
+
+      - name: Uploading
+        uses: softprops/action-gh-release@master
+        with:
+          name: ${{ env.RELEASE_NAME }}
+          token: ${{ github.token }}
+          files: ADB.zip
