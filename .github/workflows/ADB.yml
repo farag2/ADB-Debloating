@@ -11,11 +11,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@main
-      - name: Dependencies
+      - name: ADB
         run: |
           $Parameters = @{
              Path             = "src"
-             DestinationPath  = "ADB.zip"
+             DestinationPath  = "src\ADB.zip"
              CompressionLevel = "Fastest"
              Force            = $true
           }
