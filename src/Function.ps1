@@ -1,47 +1,97 @@
-if (-not (Test-Path -Path $PSScriptRoot\platform-tools\adb.exe))
+# Check whether all necessary files exist in the bin folder
+$Files = @(
+	"$PSScriptRoot\platform-tools\adb.exe",
+	"$PSScriptRoot\JSONs\Google.json",
+	"$PSScriptRoot\JSONs\Samsung.json",
+	"$PSScriptRoot\JSONs\Xiaomi.json"
+)
+if (($Files | Test-Path) -contains $false)
 {
-	Write-Warning -Message "Place adb.exe to the folder root"
-	Start-Process -FilePath "https://github.com/farag2/ADB-Debloating/blob/master/src/Download_ADB.ps1"
-
-	pause
-	exit
-}
-
-do
-{
-	$Proceed = Read-Host -Prompt "Type your device vendor: Xiaomi, Google, or Samsung"
-	if ($Proceed -eq "Xiaomi")
-	{
-		$File = "Xiaomi"
-	}
-
-	if ($Proceed -eq "Google")
-	{
-		$File = "Google"
-	}
-
-	if ($Proceed -eq "Samsung")
-	{
-		$File = "Samsung"
-	}
-}
-until (($Proceed -eq "Xiaomi") -or ($Proceed -eq "Google") -or ($Proceed -eq "Samsung"))
-
-if (Test-Path -Path "$PSScriptRoot\JSONs\$File.json")
-{
-	$Packages = Get-Content -Path "$PSScriptRoot\JSONs\$File.json" | ConvertFrom-Json
-}
-else
-{
-	Write-Warning -Message "$PSScriptRoot\JSONs\$File.json doesn't exist"
+	Write-Warning -Message "Re-download archive and download ADB via Download_ADB.ps1"
 	Start-Process -FilePath "https://github.com/farag2/ADB-Debloating"
 
 	pause
 	exit
 }
 
-& $PSScriptRoot\platform-tools\adb.exe wait-for-device
+<#
+	.SYNOPSIS
+	The "Show menu" function with the up/down arrow keys and enter key to make a selection
+
+	.EXAMPLE
+	ShowMenu -Menu $ListOfItems -Default $DefaultChoice
+
+	.LINK
+	https://qna.habr.com/answer?answer_id=1522379
+#>
+function ShowMenu
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[array]
+		$Menu,
+
+		[Parameter(Mandatory = $true)]
+		[int]
+		$Default
+	)
+
+	# https://github.com/microsoft/terminal/issues/14992
+	[System.Console]::BufferHeight += $Menu.Count
+	$minY = [Console]::CursorTop
+	$y = [Math]::Max([Math]::Min($Default, $Menu.Count), 0)
+
+	do
+	{
+		[Console]::CursorTop = $minY
+		[Console]::CursorLeft = 0
+		$i = 0
+		foreach ($item in $Menu)
+		{
+			if ($i -ne $y)
+			{
+				Write-Information -MessageData ('  {1}  ' -f ($i+1), $item) -InformationAction Continue
+			}
+			else
+			{
+				Write-Information -MessageData ('[ {1} ]' -f ($i+1), $item) -InformationAction Continue
+			}
+			$i++
+		}
+
+		$k = [Console]::ReadKey()
+		switch ($k.Key)
+		{
+			"UpArrow"
+			{
+				if ($y -gt 0)
+				{
+					$y--
+				}
+			}
+			"DownArrow"
+			{
+				if ($y -lt ($Menu.Count - 1))
+				{
+					$y++
+				}
+			}
+			"Enter"
+			{
+				return $Menu[$y]
+			}
+		}
+	}
+	while ($k.Key -notin ([ConsoleKey]::Escape, [ConsoleKey]::Enter))
+}
+$File = ShowMenu -Menu @("Samsung", "Xiaomi", "Google") -Default 1
+$Packages = Get-Content -Path "$PSScriptRoot\JSONs\$File.json" | ConvertFrom-Json
+
 Write-Warning -Message "Waiting your phone to be connected and allowed USB debugging"
+
+& $PSScriptRoot\platform-tools\adb.exe wait-for-device
 pause
 
 Add-Type -AssemblyName PresentationCore, PresentationFramework
