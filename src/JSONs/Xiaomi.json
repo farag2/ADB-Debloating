@@ -294,6 +294,10 @@
         "Package":  "com.google.android.apps.safetyhub"
     },
     {
+        "Name":  "POCO Community",
+        "Package":  "com.mi.global.pocobbs"
+    },
+    {
         "Name":  "PUBG MOBILE Gift Box",
         "Package":  "com.tencent.igxiaomi"
     },
