@@ -87,6 +87,10 @@
         "Package":  "com.google.android.videos"
     },
     {
+        "Name":  "Health Connect",
+        "Package":  "com.google.android.apps.healthdata"
+    },
+    {
         "Name":  "Maps",
         "Package":  "com.google.android.apps.maps"
     },
@@ -111,12 +115,20 @@
         "Package":  "com.google.android.apps.tips"
     },
     {
+        "Name":  "SIM Manager",
+        "Package":  "com.google.android.apps.euicc"
+    },
+    {
         "Name":  "SIM Toolkit",
         "Package":  "com.android.stk"
     },
     {
         "Name":  "Sound recorder",
         "Package":  "com.google.android.apps.recorder"
+    },
+    {
+        "Name":  "Wear OS by Google Smartwatch",
+        "Package":  "com.google.android.apps.wearable"
     },
     {
         "Name":  "YouTube",
