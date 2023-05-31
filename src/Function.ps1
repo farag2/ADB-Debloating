@@ -133,7 +133,7 @@ $CheckedPackages = New-Object System.Collections.ArrayList($null)
 		<ScrollViewer Grid.Row="0">
 		<StackPanel Name="PanelContainer"/>
 		</ScrollViewer>
-		<Button Name="ButtonUnistall" Grid.Row="2"/>
+		<Button Name="ButtonUninstall" Grid.Row="2"/>
 	</Grid>
 </Window>
 "@
@@ -144,30 +144,30 @@ $XAML.SelectNodes("//*[@*[contains(translate(name(.),'n','N'),'Name')]]") | ForE
 	Set-Variable -Name ($_.Name) -Value $Form.FindName($_.Name)
 }
 
-$ButtonUnistall.Content = "Uninstall"
+$ButtonUninstall.Content = "Uninstall"
 $Window.Title = "Bloatware ADB Uninstaller"
 #endregion Variables
 
 #region Functions
 function CheckBoxClicked
 {
-	if ($Global:CheckedPackages.Contains($_.Source.Tag))
+	if ($Script:CheckedPackages.Contains($_.Source.Tag))
 	{
-		$Global:CheckedPackages.Remove($_.Source.Tag)
+		$Script:CheckedPackages.Remove($_.Source.Tag)
 	}
 	else
 	{
-		$Global:CheckedPackages.Add($_.Source.Tag) | Out-Null
+		$Script:CheckedPackages.Add($_.Source.Tag) | Out-Null
 	}
 
-	$Global:ButtonUnistall.IsEnabled = $Global:CheckedPackages.Count -gt 0
+	$Script:ButtonUninstall.IsEnabled = $Script:CheckedPackages.Count -gt 0
 }
 
-function ButtonUnistallClicked
+function ButtonUninstallClicked
 {
 	$Form.Close()
 
-	$Global:CheckedPackages | ForEach-Object -Process {
+	$Script:CheckedPackages | ForEach-Object -Process {
 		$_ -split " " | ForEach-Object -Process {
 			Write-Verbose -Message $_ -Verbose
 
@@ -201,7 +201,7 @@ foreach ($Package in $Packages)
 	$PanelContainer.Children.Add($Panel) | Out-Null
 }
 
-$ButtonUnistall.Add_Click({ ButtonUnistallClicked })
+$ButtonUninstall.Add_Click({ ButtonUninstallClicked })
 $Form.ShowDialog() | Out-Null
 
 Stop-Process -Name adb -Force -ErrorAction Ignore
