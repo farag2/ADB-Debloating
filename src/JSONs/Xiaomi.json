@@ -325,10 +325,6 @@
         "Package":  "com.android.soundrecorder"
     },
     {
-        "Name":  "Spotify",
-        "Package":  "com.spotify.music"
-    },
-    {
         "Name":  "State of Survival",
         "Package":  "com.kingsgroup.ss.xiaomi"
     },
