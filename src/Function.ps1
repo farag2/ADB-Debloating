@@ -1,9 +1,10 @@
+cls
 # Check whether all necessary files exist in the bin folder
 $Files = @(
 	"$PSScriptRoot\platform-tools\adb.exe",
-	"$PSScriptRoot\JSONs\Google.json",
-	"$PSScriptRoot\JSONs\Samsung.json",
-	"$PSScriptRoot\JSONs\Xiaomi.json"
+	"$PSScriptRoot\JSON\Google.json",
+	"$PSScriptRoot\JSON\Samsung.json",
+	"$PSScriptRoot\JSON\Xiaomi.json"
 )
 if (($Files | Test-Path) -contains $false)
 {
@@ -18,13 +19,22 @@ if (($Files | Test-Path) -contains $false)
 	.SYNOPSIS
 	The "Show menu" function with the up/down arrow keys and enter key to make a selection
 
+	.PARAMETER Menu
+	Array of items to choose from
+
+	.PARAMETER Default
+	Default selected item in array
+
+	.PARAMETER AddSkip
+	Add localized extracted "Skip" string from shell32.dll
+
 	.EXAMPLE
-	ShowMenu -Menu $ListOfItems -Default $DefaultChoice
+	Show-Menu -Menu $Items -Default 1
 
 	.LINK
 	https://qna.habr.com/answer?answer_id=1522379
 #>
-function ShowMenu
+function Show-Menu
 {
 	[CmdletBinding()]
 	param
@@ -48,6 +58,7 @@ function ShowMenu
 		[Console]::CursorTop = $minY
 		[Console]::CursorLeft = 0
 		$i = 0
+
 		foreach ($item in $Menu)
 		{
 			if ($i -ne $y)
@@ -58,10 +69,12 @@ function ShowMenu
 			{
 				Write-Information -MessageData ('[ {1} ]' -f ($i+1), $item) -InformationAction Continue
 			}
+
 			$i++
 		}
 
 		$k = [Console]::ReadKey()
+
 		switch ($k.Key)
 		{
 			"UpArrow"
@@ -86,17 +99,30 @@ function ShowMenu
 	}
 	while ($k.Key -notin ([ConsoleKey]::Escape, [ConsoleKey]::Enter))
 }
-$File = ShowMenu -Menu @("Samsung", "Xiaomi", "Google") -Default 1
-$Packages = Get-Content -Path "$PSScriptRoot\JSONs\$File.json" | ConvertFrom-Json
+
+$File = Show-Menu -Menu @("Samsung", "Xiaomi", "Google") -Default 1
+
+Write-Verbose -Message "Please wait..." -Verbose
+
+$Packages = @()
+$PackagesList = Get-Content -Path "$PSScriptRoot\JSON\$File.json" | ConvertFrom-Json
+foreach ($Package in $PackagesList.Package)
+{
+	if ((@((& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "")) | Where-Object -FilterScript {$_ -eq $Package}) -or (@((& $PSScriptRoot\platform-tools\adb.exe shell pm list packages -d).replace("package:", "")) -contains $Package))
+	{
+		$Packages += $PackagesList | Where-Object {$_.Package -eq $Package}
+	}
+}
 
 Write-Warning -Message "Waiting your phone to be connected and allowed USB debugging"
 
 & $PSScriptRoot\platform-tools\adb.exe wait-for-device
+
 pause
 
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 
-$CheckedPackages = New-Object System.Collections.ArrayList($null)
+$CheckedPackages = New-Object -TypeName System.Collections.ArrayList($null)
 
 #region XAML Markup
 # The section defines the design of the upcoming dialog box
@@ -171,16 +197,9 @@ function ButtonUninstallClicked
 		$_ -split " " | ForEach-Object -Process {
 			Write-Verbose -Message $_ -Verbose
 
-			if (@("com.android.soundrecorder", "com.miui.notes", "com.miui.notes", "com.miui.compass", "com.miui.compass") -contains $_)
+			if ((@(& $PSScriptRoot\platform-tools\adb.exe shell pm uninstall --user 0 $_)) -contains "Failure [-1000]")
 			{
-				if (& $PSScriptRoot\platform-tools\adb.exe shell pm list packages $_)
-				{
-					& $PSScriptRoot\platform-tools\adb.exe shell pm disable-user $_
-				}
-			}
-			else
-			{
-				& $PSScriptRoot\platform-tools\adb.exe shell pm uninstall --user 0 $_
+				& $PSScriptRoot\platform-tools\adb.exe shell pm disable-user $_
 			}
 		}
 	}
@@ -203,6 +222,8 @@ foreach ($Package in $Packages)
 
 $ButtonUninstall.Add_Click({ ButtonUninstallClicked })
 $Form.ShowDialog() | Out-Null
+
+Start-Sleep -Seconds 3
 
 Stop-Process -Name adb -Force -ErrorAction Ignore
 
