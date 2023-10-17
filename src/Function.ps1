@@ -104,11 +104,17 @@ $File = Show-Menu -Menu @("Samsung", "Xiaomi", "Google") -Default 1
 
 Write-Verbose -Message "Please wait..." -Verbose
 
-$Packages = @()
 $PackagesList = Get-Content -Path "$PSScriptRoot\JSON\$File.json" | ConvertFrom-Json
+# Check if disabled packages exist, unless we cannot check if replace() method exists for them
+if ($null -ne (& $PSScriptRoot\platform-tools\adb.exe shell pm list packages -d))
+{
+	$DisabledPackages = @((& $PSScriptRoot\platform-tools\adb.exe shell pm list packages -d).replace("package:", ""))
+}
+
+$Packages = @()
 foreach ($Package in $PackagesList.Package)
 {
-	if ((@((& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "")) | Where-Object -FilterScript {$_ -eq $Package}) -or (@((& $PSScriptRoot\platform-tools\adb.exe shell pm list packages -d).replace("package:", "")) -contains $Package))
+	if ((@((& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "")) | Where-Object -FilterScript {$_ -eq $Package}) -or ($DisabledPackages -contains $Package))
 	{
 		$Packages += $PackagesList | Where-Object {$_.Package -eq $Package}
 	}
