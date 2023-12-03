@@ -52,6 +52,10 @@
         "Package":  "com.android.chrome"
     },
     {
+        "Name":  "Cross-Device Services",
+        "Package":  "com.google.ambient.streaming"
+    },
+    {
         "Name":  "Routines",
         "Package":  "com.samsung.android.app.routines"
     },
