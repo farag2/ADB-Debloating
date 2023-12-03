@@ -60,6 +60,10 @@
         "Package":  "com.crazy.juicer.xm"
     },
     {
+        "Name":  "Cross-Device Services",
+        "Package":  "com.google.ambient.streaming"
+    },
+    {
         "Name":  "Device Health Services",
         "Package":  "com.google.android.apps.turbo"
     },
