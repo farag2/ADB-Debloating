@@ -16,6 +16,10 @@
         "Package":  "com.android.chrome"
     },
     {
+        "Name":  "Cross-Device Services",
+        "Package":  "com.google.ambient.streaming"
+    },
+    {
         "Name":  "Digital Wellbeing",
         "Package":  "com.google.android.apps.wellbeing"
     },
