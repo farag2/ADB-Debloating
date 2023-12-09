@@ -1,4 +1,3 @@
-cls
 # Check whether all necessary files exist in the bin folder
 $Files = @(
 	"$PSScriptRoot\platform-tools\adb.exe",
