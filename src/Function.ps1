@@ -14,6 +14,20 @@ if (($Files | Test-Path) -contains $false)
 	exit
 }
 
+# Check whether adb is functioning
+try
+{
+	(& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "") | Select-Object -First 0
+}
+catch [System.Management.Automation.RuntimeException]
+{
+	Write-Warning -Message "Re-connect cable or revoke USB debugging authorizations in developer settings"
+	Stop-Process -Name adb -Force -ErrorAction Ignore
+
+	pause
+	exit
+}
+
 <#
 	.SYNOPSIS
 	The "Show menu" function with the up/down arrow keys and enter key to make a selection
