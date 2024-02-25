@@ -14,6 +14,17 @@ if (($Files | Test-Path) -contains $false)
 	exit
 }
 
+if (Get-Process -Name adb -ErrorAction Ignore)
+{
+	Write-Warning -Message "Kill adb.exe manually and try again"
+	pause
+	exit
+}
+
+Write-Warning -Message "Waiting your phone to be connected and allowed USB debugging"
+& $PSScriptRoot\platform-tools\adb.exe wait-for-device
+pause
+
 # Check whether adb is functioning
 try
 {
@@ -127,17 +138,11 @@ if ($null -ne (& $PSScriptRoot\platform-tools\adb.exe shell pm list packages -d)
 $Packages = @()
 foreach ($Package in $PackagesList.Package)
 {
-	if ((@((& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "")) | Where-Object -FilterScript {$_ -eq $Package}) -or ($DisabledPackages -contains $Package))
+	if ((@((& $PSScriptRoot\platform-tools\adb.exe shell cmd package list packages).replace("package:", "")) | Where-Object -FilterScript {$_ -eq $Package}) -and ($DisabledPackages -notcontains $Package))
 	{
 		$Packages += $PackagesList | Where-Object {$_.Package -eq $Package}
 	}
 }
-
-Write-Warning -Message "Waiting your phone to be connected and allowed USB debugging"
-
-& $PSScriptRoot\platform-tools\adb.exe wait-for-device
-
-pause
 
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 
