@@ -192,6 +192,10 @@
         "Package":  "com.google.android.apps.maps"
     },
     {
+        "Name":  "My Galaxy",
+        "Package":  "com.mygalaxy"
+    },
+    {
         "Name":  "Microsoft SwiftKey Keyboard",
         "Package":  "com.touchtype.swiftkey"
     },
@@ -290,6 +294,10 @@
     {
         "Name":  "Samsung Pay",
         "Package":  "com.samsung.android.spay"
+    },
+    {
+        "Name":  "Samsung Shop",
+        "Package":  "com.samsung.ecomm.global.in"
     },
     {
         "Name":  "Samsung User Manual",
