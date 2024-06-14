@@ -40,6 +40,10 @@
         "Package":  "com.samsung.android.bixby.wakeup"
     },
     {
+        "Name":  "Samsung App Recommendations",
+        "Package":  "com.samsung.android.mapsagent"
+    },
+    {
         "Name":  "Bookmark Provider",
         "Package":  "com.android.bookmarkprovider"
     },
@@ -62,6 +66,10 @@
     {
         "Name":  "Samsung Kids Installer",
         "Package":  "com.samsung.android.kidsinstaller"
+    },
+    {
+        "Name":  "Samsung Translator",
+        "Package":  "com.samsung.android.app.interpreter"
     },
     {
         "Name":  "My Emoji Stickers",

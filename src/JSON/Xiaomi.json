@@ -320,6 +320,14 @@
         "Package":  "com.mi.global.pocobbs"
     },
     {
+        "Name":  "Xiaomi Community",
+        "Package":  "com.mi.global.bbs"
+    },
+    {
+        "Name":  "App Vault",
+        "Package":  "com.mi.globalminusscreen"
+    },
+    {
         "Name":  "PUBG MOBILE Gift Box",
         "Package":  "com.tencent.igxiaomi"
     },
@@ -338,6 +346,10 @@
     {
         "Name":  "ShareMe",
         "Package":  "com.xiaomi.midrop"
+    },
+    {
+        "Name":  "Mi Home",
+        "Package":  "com.xiaomi.smarthome"
     },
     {
         "Name":  "SIM Toolkit",
