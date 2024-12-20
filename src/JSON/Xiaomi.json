@@ -28,6 +28,10 @@
         "Package":  "com.google.android.apps.subscriptions.red"
     },
     {
+        "Name":  "App Vault",
+        "Package":  "com.mi.globalminusscreen"
+    },
+    {
         "Name":  "Block Puzzle Guardian",
         "Package":  "com.block.puzzle.game.hippo.mi"
     },
@@ -101,7 +105,7 @@
     },
     {
         "Name":  "Facebook",
-        "Package":  "com.facebook.katana"
+        "Package":  "com.facebook.services"
     },
     {
         "Name":  "Facebook",
@@ -109,11 +113,11 @@
     },
     {
         "Name":  "Facebook",
-        "Package":  "com.facebook.appmanager"
+        "Package":  "com.facebook.katana"
     },
     {
         "Name":  "Facebook",
-        "Package":  "com.facebook.services"
+        "Package":  "com.facebook.appmanager"
     },
     {
         "Name":  "FM Radio",
@@ -252,6 +256,10 @@
         "Package":  "cn.wps.xiaomi.abroad.lite"
     },
     {
+        "Name":  "Mi Home",
+        "Package":  "com.xiaomi.smarthome"
+    },
+    {
         "Name":  "Mi Mover",
         "Package":  "com.miui.huanji"
     },
@@ -297,11 +305,11 @@
     },
     {
         "Name":  "Opera",
-        "Package":  "com.opera.browser"
+        "Package":  "com.opera.preinstall"
     },
     {
         "Name":  "Opera",
-        "Package":  "com.opera.preinstall"
+        "Package":  "com.opera.browser"
     },
     {
         "Name":  "Ozon",
@@ -324,14 +332,6 @@
         "Package":  "com.mi.global.pocostore"
     },
     {
-        "Name":  "Xiaomi Community",
-        "Package":  "com.mi.global.bbs"
-    },
-    {
-        "Name":  "App Vault",
-        "Package":  "com.mi.globalminusscreen"
-    },
-    {
         "Name":  "PUBG MOBILE Gift Box",
         "Package":  "com.tencent.igxiaomi"
     },
@@ -345,15 +345,11 @@
     },
     {
         "Name":  "ShareMe",
-        "Package":  "com.miui.mishare.connectivity"
-    },
-    {
-        "Name":  "ShareMe",
         "Package":  "com.xiaomi.midrop"
     },
     {
-        "Name":  "Mi Home",
-        "Package":  "com.xiaomi.smarthome"
+        "Name":  "ShareMe",
+        "Package":  "com.miui.mishare.connectivity"
     },
     {
         "Name":  "SIM Toolkit",
@@ -384,16 +380,32 @@
         "Package":  "com.mintgames.triplecrush.tile.fun"
     },
     {
-        "Name":  "WPS Office",
-        "Package":  "cn.wps.moffice_eng"
-    },
-    {
         "Name":  "World Scenery: Crossword",
         "Package":  "com.mintgames.wordtrip"
     },
     {
+        "Name":  "WPS Office",
+        "Package":  "cn.wps.moffice_eng"
+    },
+    {
+        "Name":  "Xiaomi Community",
+        "Package":  "com.mi.global.bbs"
+    },
+    {
         "Name":  "Xiaomi Games",
         "Package":  "com.xiaomi.glgm"
+    },
+    {
+        "Name":  "Yandex",
+        "Package":  "ru.yandex.searchplugin"
+    },
+    {
+        "Name":  "Yandex Browser",
+        "Package":  "com.yandex.browser"
+    },
+    {
+        "Name":  "Yandex Satellite",
+        "Package":  "com.yandex.preinstallsatellite"
     },
     {
         "Name":  "Yellow Pages",
@@ -412,23 +424,11 @@
         "Package":  "com.google.android.apps.youtube.music"
     },
     {
-        "Name":  "ZenkitPartnerConfig",
-        "Package":  "com.yandex.zenkitpartnerconfig"
-    },
-    {
         "Name":  "Zen",
         "Package":  "com.yandex.zen"
     },
     {
-        "Name":  "Yandex",
-        "Package":  "ru.yandex.searchplugin"
-    },
-    {
-        "Name":  "Yandex Satellite",
-        "Package":  "com.yandex.preinstallsatellite"
-    },
-    {
-        "Name":  "Yandex Browser",
-        "Package":  "com.yandex.browser"
+        "Name":  "ZenkitPartnerConfig",
+        "Package":  "com.yandex.zenkitpartnerconfig"
     }
 ]
