@@ -320,6 +320,10 @@
         "Package":  "com.mi.global.pocobbs"
     },
     {
+        "Name":  "POCO Store",
+        "Package":  "com.mi.global.pocostore"
+    },
+    {
         "Name":  "Xiaomi Community",
         "Package":  "com.mi.global.bbs"
     },
@@ -356,6 +360,10 @@
         "Package":  "com.android.stk"
     },
     {
+        "Name":  "Snake Zone.io",
+        "Package":  "com.nf.snake"
+    },
+    {
         "Name":  "Sound recorder",
         "Package":  "com.android.soundrecorder"
     },
@@ -378,6 +386,10 @@
     {
         "Name":  "WPS Office",
         "Package":  "cn.wps.moffice_eng"
+    },
+    {
+        "Name":  "World Scenery: Crossword",
+        "Package":  "com.mintgames.wordtrip"
     },
     {
         "Name":  "Xiaomi Games",
