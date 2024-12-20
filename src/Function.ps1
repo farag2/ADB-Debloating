@@ -124,8 +124,9 @@ function Show-Menu
 	while ($k.Key -notin ([ConsoleKey]::Escape, [ConsoleKey]::Enter))
 }
 
+Write-Information -MessageData "" -InformationAction Continue
 $File = Show-Menu -Menu @("Samsung", "Xiaomi", "Google") -Default 1
-
+Write-Information -MessageData "" -InformationAction Continue
 Write-Verbose -Message "Please wait..." -Verbose
 
 $PackagesList = Get-Content -Path "$PSScriptRoot\JSON\$File.json" | ConvertFrom-Json
