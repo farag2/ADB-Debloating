@@ -60,6 +60,18 @@
         "Package":  "com.google.android.apps.nbu.files"
     },
     {
+        "Name":  "Google Find My Device",
+        "Package":  "com.google.android.apps.adm"
+    },
+    {
+        "Name":  "Google Home",
+        "Package":  "com.google.android.apps.chromecast.app"
+    },
+    {
+        "Name":  "Google Keep",
+        "Package":  "com.google.android.keep"
+    },
+    {
         "Name":  "Google Location History",
         "Package":  "com.google.android.gms.location.history"
     },
