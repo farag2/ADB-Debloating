@@ -37,6 +37,8 @@ adb pull sdcard/DCIM/Camera D:\folder
 * Connect phone to PC via USB cable;
 * Enable USB debugging in your phone OS;
 * Download and expand latest release archive;
+* Open PowerShell as admin and run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Force`
+* Close Powershell run as admin;
 * Download ADB via `Download_ADB.ps1`;
 * Run `Function.ps1`.
 
