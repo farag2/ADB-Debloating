@@ -47,7 +47,7 @@ adb pull sdcard/DCIM/Camera D:\folder
 * [Google USB Driver](https://developer.android.com/studio/run/win-usb)
   * [Official all OEMs drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
 * [Download ADB](https://developer.android.com/studio/releases/platform-tools)
-* [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec01)
+* [App Inspector](https://play.google.com/store/apps/details?id=com.jgba.appinspector)
 * [ADB AppControl](https://4pda.to/forum/index.php?showtopic=993643)
 * [ReVanced](https://github.com/revanced)
 * [My ReVanced Builder](https://github.com/farag2/ReVanced_Builder)
