@@ -24,10 +24,6 @@
         "Package":  "com.google.android.projection.gearhead"
     },
     {
-        "Name":  "Android One",
-        "Package":  "com.google.android.apps.subscriptions.red"
-    },
-    {
         "Name":  "App Vault",
         "Package":  "com.mi.globalminusscreen"
     },
@@ -633,7 +629,7 @@
     },
     {
         "Name":  "SwiftKey factory settings",
-        "Package":  "com.touchtype.swiftkey"
+        "Package":  "com.swiftkey.swiftkeyconfigurator"
     },
     {
         "Name":  "TikTok",
